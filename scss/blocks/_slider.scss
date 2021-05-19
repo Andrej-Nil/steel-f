@@ -1,0 +1,16 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides--is-move {
+  transition: 0.2s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}

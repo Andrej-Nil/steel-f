@@ -1,0 +1,43 @@
+{
+	"rez": 1,
+	"desc": "",
+	"field_name":"Алюминий",
+	"content": [
+		{
+			"field_slug":"aluminii", 
+			"field_value_name": "труба Алю", 
+			"field_value_slug": "truba",
+			"checked": false
+		},
+		{
+			"field_slug":"aluminii", 
+			"field_value_name": "уголок Алю", 
+			"field_value_slug": "ugolok",
+			"checked": false
+		},
+		{
+			"field_slug":"aluminii", 
+			"field_value_name": "лист Алю", 
+			"field_value_slug": "list",
+			"checked": false
+		},
+		{
+			"field_slug":"aluminii", 
+			"field_value_name": "арматура Алю", 
+			"field_value_slug": "armatura",
+			"checked": false
+		},
+		{
+			"field_slug":"aluminii", 
+			"field_value_name": "швеллер Алю", 
+			"field_value_slug": "schweller",
+			"checked": false
+		},
+		{
+			"field_slug":"aluminii", 
+			"field_value_name": "двутавр Алю", 
+			"field_value_slug": "dvutavr",
+			"checked": false
+		}
+	]
+}

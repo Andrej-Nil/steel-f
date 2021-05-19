@@ -1,0 +1,10 @@
+{
+	"rez": 1,
+	"desc": "",
+  "prod":{
+    "count": 3
+  },
+  "card": {
+    "total_price": 30000
+  }
+}

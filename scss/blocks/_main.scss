@@ -1,0 +1,138 @@
+//основные цвета
+$yellow: #fbc000;
+$d-grey: #4a525f;
+$milky: #f0f1f3;
+$black: #000000;
+$white: #ffffff;
+$pearl: #e5e5e5;
+
+// дополнительные цвета
+$grey: #666666;
+$l-grey: #cccccc;
+$green: #64bc26;
+$red: #ea1601;
+
+//hover
+$l-yellow: #ffc91c;
+//active
+$d-yellow: #dca700;
+
+// font
+$gilroy: "Gilroy", sans-serif;
+
+//полупрозрачный фон
+$bgForModals: rgba(0, 0, 0, 0.5);
+$bgWhite: rgba(255, 255, 255, 0.8);
+
+// отступ по бокам экрана
+$flank: 0 15px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $gilroy;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 95.2%;
+  color: $d-grey;
+  background: $pearl;
+}
+
+.black {
+  background-color: #000;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: $d-grey;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app {
+  overflow: hidden;
+}
+
+.link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1545px;
+  margin: 0 auto;
+}
+
+.content-wrap {
+  display: flex;
+  padding: 0;
+  @media (min-width: 1090px) {
+    padding: $flank;
+    justify-content: space-between;
+    max-width: 1100px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1200px;
+  }
+  @media (min-width: 1500px) {
+    max-width: 1545px;
+  }
+}
+
+.left {
+  width: 100%;
+  @media (min-width: 1090px) {
+    max-width: 700px;
+    font-size: 24px;
+  }
+  @media (min-width: 1500px) {
+    max-width: 1060px;
+    font-size: 24px;
+  }
+}
+
+.right {
+  width: 320px;
+  margin-bottom: 100px;
+  display: none;
+  @media (min-width: 1090px) {
+    display: block;
+    font-size: 22px;
+  }
+
+  @media (min-width: 1280px) {
+    display: block;
+    width: 370px;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
