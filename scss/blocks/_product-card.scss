@@ -14,9 +14,9 @@
   }
 
   @media (min-width: 1090px) {
-    max-width: 340px;
-    width: 100%;
-    min-height: 460px;
+    max-width: 380px;
+    min-width: 100%;
+    min-height: 333px;
     margin-bottom: 50px;
     &:hover {
       z-index: 10;
@@ -26,10 +26,14 @@
       transform: translate(0, 64px);
     }
 
-    &:hover .product-card__img {
-      transform: scale(1.1, 1.1);
-    }
+    //&:hover .product-card__img {
+    //transform: scale(1.1, 1.1);
+    //}
   }
+}
+
+.mb0 {
+  margin-bottom: 0;
 }
 
 .product-card__content {
@@ -37,17 +41,14 @@
   display: flex;
   height: 100%;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: $bdr5;
 }
 
 .product-card__preview {
   position: relative;
   overflow: hidden;
   height: auto;
-  border-radius: 20px 20px 0 0;
-  @media (min-width: 1090px) {
-    height: 320px;
-  }
+  border-radius: $bdr5 $bdr5 0 0;
 }
 
 .product-card__img {
@@ -70,30 +71,37 @@
 .product-card__title {
   font-size: 14px;
   line-height: 110%;
-  margin-bottom: 12px;
+  //margin-bottom: 12px;
+
   @media (min-width: 1090px) {
     font-size: 18px;
-    line-height: 95.2%;
-    margin-bottom: 20px;
+    line-height: 130%;
+    //margin-bottom: 20px;
   }
 }
 
 .product-card__buy {
   display: flex;
   align-items: flex-end;
+  align-items: center;
   margin-top: auto;
   justify-content: space-between;
   font-weight: 600;
 }
 
 .product-card__discount {
-  margin-bottom: 8px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+
+  //margin-bottom: 8px;
 }
 
 .product-card__number {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 95.2%;
+  font-size: 24px;
+  line-height: 150%;
+  color: $d-blue;
   @media (min-width: 1090px) {
     font-size: 24px;
   }
@@ -111,7 +119,7 @@
 
 .product-card__in-basket {
   display: none;
-  padding: 15px 0;
+  padding: 5px 0;
   width: 160px;
   @media (min-width: 1090px) {
     display: block;
@@ -122,14 +130,14 @@
   position: absolute;
   background: $white;
   border-radius: 50%;
-  top: 11px;
-  right: 5px;
-  width: 40px;
-  height: 40px;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
   z-index: 1000;
   @media (min-width: 1090px) {
-    top: 19px;
-    right: 15px;
+    top: 0;
+    right: 0;
     width: 50px;
     height: 50px;
   }
@@ -145,7 +153,7 @@
   width: 100%;
   padding: 20px 20px 12px;
   background: $white;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 $bdr5 $bdr5;
   transition: 0.2s ease-in-out;
   z-index: -1;
   @media (min-width: 1000px) {

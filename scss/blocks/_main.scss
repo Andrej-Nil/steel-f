@@ -2,22 +2,27 @@
 $blue: #115192;
 $l-blue: #7dc8ed;
 $d-blue: #071a36;
+
 $pearl: #f5f5f5;
 
-$yellow: #fbc000;
-$d-grey: #4a525f;
-$milky: #f0f1f3;
+$grey: #c6c7ca;
+$d-grey: #566173;
+
 $black: #000000;
 $white: #ffffff;
 
+//$yellow: #fbc000;
+
+$milky: #eaeaea;
+
 // дополнительные цвета
-$grey: #666666;
+
 $l-grey: #cccccc;
 $green: #64bc26;
 $red: #ea1601;
 
 //hover
-$l-yellow: #ffc91c;
+//$l-blue: #ffc91c;
 //active
 $d-yellow: #dca700;
 
@@ -72,7 +77,7 @@ img {
 
 a {
   text-decoration: none;
-  color: $d-grey;
+  color: $d-blue;
 }
 
 ul {
@@ -91,7 +96,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -99,16 +104,16 @@ ul {
   display: flex;
   padding: 0;
   @media (min-width: 1090px) {
-    padding: $flank;
+    //padding: $flank;
     justify-content: space-between;
     max-width: 1100px;
   }
 
   @media (min-width: 1280px) {
-    max-width: 1200px;
+    max-width: 1180px;
   }
   @media (min-width: 1500px) {
-    max-width: 1200px;
+    max-width: 1180px;
   }
 }
 
@@ -119,7 +124,7 @@ ul {
     font-size: 24px;
   }
   @media (min-width: 1500px) {
-    max-width: 1060px;
+    max-width: 780px;
     font-size: 24px;
   }
 }
@@ -135,7 +140,7 @@ ul {
 
   @media (min-width: 1280px) {
     display: block;
-    width: 370px;
+    width: 380px;
   }
 }
 

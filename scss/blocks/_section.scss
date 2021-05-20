@@ -4,7 +4,7 @@
   padding: $flank;
   @media (min-width: 1090px) {
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 }
 
@@ -20,10 +20,10 @@
   line-height: 95.2%;
   color: $d-grey;
 
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   @media (min-width: 1280px) {
-    font-size: 60px;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 60px;
   }
 }
 
@@ -37,8 +37,8 @@
 .section-controls {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  //margin-top: 30px;
   @media (min-width: 500px) {
     margin-top: 30px;
   }
@@ -55,15 +55,10 @@
 .section-arrow {
   position: relative;
   display: none;
-  width: 50px;
-  height: 50px;
-  background: $white;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  &:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  }
 
   @media (min-width: 500px) {
     display: block;
@@ -72,9 +67,9 @@
 
 .section-link {
   width: 100%;
-  max-width: 290px;
+  //max-width: 290px;
   @media (min-width: 350px) {
-    max-width: 250px;
+    max-width: 240px;
   }
 
   @media (min-width: 500px) {
@@ -87,8 +82,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20px;
-  height: 14px;
+  width: 17px;
+  height: 30px;
 }
 
 .section-slider {

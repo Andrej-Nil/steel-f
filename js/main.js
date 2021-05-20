@@ -1289,8 +1289,8 @@ function findChildren(el, domClass) {
 
 function setFavoriteIcon(el, boolean) {
   const imgEl = el.querySelector('.js-favorite-img');
-  const pathToImage = './img/icon/favorite-icon.svg';
-  const pathToImageActive = './img/icon/favorite-active-icon.svg';
+  const pathToImage = './img/icon/product-like-icon.svg';
+  const pathToImageActive = './img/icon/product-like-active-icon.svg';
   if (!boolean) {
     imgEl.src = pathToImage;
     return;
@@ -1765,12 +1765,12 @@ function toggleInBasketIconBtn(btn, toggle = false) {
 
 function toggleInBasketBtn(btn, toggle = false, desc) {
   if (toggle) {
-    btn.classList.remove('yellow-btn');
+    btn.classList.remove('blue-btn');
     btn.classList.add('white-btn');
     btn.innerHTML = desc;
     return;
   }
-  btn.classList.add('yellow-btn');
+  btn.classList.add('blue-btn');
   btn.classList.remove('white-btn');
   btn.innerHTML = desc;
 }

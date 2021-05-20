@@ -116,13 +116,13 @@
 
 .h-icon__indicator {
   position: absolute;
-  top: 0px;
+  top: -3px;
   right: -5px;
   display: none;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  background: $blue;
+  background: $l-blue;
 }
 
 .h-icon__indicator--is-show {
