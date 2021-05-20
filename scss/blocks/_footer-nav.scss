@@ -1,6 +1,5 @@
 .f-top {
-  background: $white;
-  border-bottom: 1px solid $milky;
+  background: $milky;
   padding: $flank;
   @media (min-width: 1575px) {
     padding: 0;
@@ -12,7 +11,7 @@
   display: flex;
   align-items: center;
   @media (min-width: 1280px) {
-    min-height: 150px;
+    min-height: 135px;
   }
 }
 
@@ -20,7 +19,7 @@
   height: 55px;
   margin-right: auto;
   @media (min-width: 1280px) {
-    height: 93px;
+    height: 78px;
   }
 }
 
@@ -32,9 +31,11 @@
 }
 
 .f-nav__item {
-  font-size: 18px;
-  line-height: 95.2%;
-  margin-right: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  margin-right: 50px;
+  text-transform: uppercase;
   display: none;
   &:last-child {
     margin-right: 0;
@@ -75,6 +76,6 @@
   }
 
   @media (min-width: 1280px) {
-    font-size: 24px;
+    font-size: 16px;
   }
 }

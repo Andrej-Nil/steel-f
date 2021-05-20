@@ -1,6 +1,7 @@
 .f-contacts {
-  background: $white;
+  background: $milky;
   padding: $flank;
+  border-bottom: 2px solid $pearl;
   @media (min-width: 1575px) {
     padding: 0;
   }
@@ -13,30 +14,27 @@
   padding: 15px 0 22px 0;
   //min-height: 150px;
 
-  font-weight: 300;
-  line-height: 160%;
-  color: $grey;
+  font-weight: normal;
+  line-height: 200%;
 
   font-size: 14px;
-  line-height: 130%;
 
   @media (min-width: 900px) {
     flex-direction: row;
   }
   @media (min-width: 1280px) {
-    min-height: 150px;
-    padding: 40px 0 0 0;
-    font-size: 18px;
+    min-height: 135px;
+    padding: 20px 0 0 0;
+    font-size: 14px;
   }
 }
 
 .privacy-policy {
   position: relative;
   width: 100%;
-  max-width: 269px;
-  color: $grey;
-  line-height: 160%;
-  margin-right: auto;
+  max-width: 288px;
+  line-height: 200%;
+  margin-right: 111px;
   text-decoration: underline;
   order: 1;
   @media (min-width: 900px) {
@@ -46,28 +44,34 @@
 
 .f-contacts__address {
   margin: 0 0 30px 0;
-  width: 100%;
-  max-width: 400px;
+  min-width: 370px;
 
+  font-size: 18px;
+  line-height: 130%;
   @media (min-width: 900px) {
     margin: 0 30px 0 0;
     width: 331px;
   }
 
   @media (min-width: 1100px) {
-    margin-right: 124px;
+    margin-right: 131px;
   }
 }
 
 .f-contacts__list {
   margin: 0 0 30px 0;
+  font-size: 18px;
+  line-height: 130%;
   @media (min-width: 900px) {
     margin: 0;
   }
 }
 
+.f-contact {
+  margin-bottom: 20px;
+}
+
 .f-contact__link {
-  color: $grey;
   cursor: pointer;
 }
 

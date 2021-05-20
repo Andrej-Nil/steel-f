@@ -5871,8 +5871,7 @@ ul {
 }
 
 .f-top {
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+  background: #eaeaea;
   padding: 0 15px;
 }
 
@@ -5894,7 +5893,7 @@ ul {
 
 @media (min-width: 1280px) {
   .f-top__inner {
-    min-height: 150px;
+    min-height: 135px;
   }
 }
 
@@ -5905,7 +5904,7 @@ ul {
 
 @media (min-width: 1280px) {
   .f-logo {
-    height: 93px;
+    height: 78px;
   }
 }
 
@@ -5922,9 +5921,11 @@ ul {
 }
 
 .f-nav__item {
-  font-size: 18px;
-  line-height: 95.2%;
-  margin-right: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  margin-right: 50px;
+  text-transform: uppercase;
   display: none;
 }
 
@@ -5967,13 +5968,14 @@ ul {
 
 @media (min-width: 1280px) {
   .f-nav__item {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 
 .f-contacts {
-  background: #ffffff;
+  background: #eaeaea;
   padding: 0 15px;
+  border-bottom: 2px solid #f5f5f5;
 }
 
 @media (min-width: 1575px) {
@@ -5994,11 +5996,9 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px 0 22px 0;
-  font-weight: 300;
-  line-height: 160%;
-  color: #c6c7ca;
+  font-weight: normal;
+  line-height: 200%;
   font-size: 14px;
-  line-height: 130%;
 }
 
 @media (min-width: 900px) {
@@ -6012,19 +6012,18 @@ ul {
 
 @media (min-width: 1280px) {
   .f-contacts__inner {
-    min-height: 150px;
-    padding: 40px 0 0 0;
-    font-size: 18px;
+    min-height: 135px;
+    padding: 20px 0 0 0;
+    font-size: 14px;
   }
 }
 
 .privacy-policy {
   position: relative;
   width: 100%;
-  max-width: 269px;
-  color: #c6c7ca;
-  line-height: 160%;
-  margin-right: auto;
+  max-width: 288px;
+  line-height: 200%;
+  margin-right: 111px;
   text-decoration: underline;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -6041,8 +6040,9 @@ ul {
 
 .f-contacts__address {
   margin: 0 0 30px 0;
-  width: 100%;
-  max-width: 400px;
+  min-width: 370px;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 @media (min-width: 900px) {
@@ -6054,12 +6054,14 @@ ul {
 
 @media (min-width: 1100px) {
   .f-contacts__address {
-    margin-right: 124px;
+    margin-right: 131px;
   }
 }
 
 .f-contacts__list {
   margin: 0 0 30px 0;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 @media (min-width: 900px) {
@@ -6068,8 +6070,11 @@ ul {
   }
 }
 
+.f-contact {
+  margin-bottom: 20px;
+}
+
 .f-contact__link {
-  color: #c6c7ca;
   cursor: pointer;
 }
 
