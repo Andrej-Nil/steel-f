@@ -44,7 +44,7 @@
     width: 40px;
     height: 40px;
     &:hover {
-      background: $l-yellow;
+      background: $l-blue;
     }
 
     &:active {
@@ -54,5 +54,5 @@
 }
 
 .pagination__btn--is-active {
-  background: $yellow;
+  background: $blue;
 }

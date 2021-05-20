@@ -1,10 +1,14 @@
 //основные цвета
+$blue: #115192;
+$l-blue: #7dc8ed;
+$d-blue: #071a36;
+$pearl: #f5f5f5;
+
 $yellow: #fbc000;
 $d-grey: #4a525f;
 $milky: #f0f1f3;
 $black: #000000;
 $white: #ffffff;
-$pearl: #e5e5e5;
 
 // дополнительные цвета
 $grey: #666666;
@@ -18,7 +22,7 @@ $l-yellow: #ffc91c;
 $d-yellow: #dca700;
 
 // font
-$gilroy: "Gilroy", sans-serif;
+$gilroy: "Futura", sans-serif;
 
 //полупрозрачный фон
 $bgForModals: rgba(0, 0, 0, 0.5);
@@ -26,6 +30,8 @@ $bgWhite: rgba(255, 255, 255, 0.8);
 
 // отступ по бокам экрана
 $flank: 0 15px;
+
+$bdr5: 5px;
 
 * {
   padding: 0;
@@ -39,7 +45,7 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 95.2%;
-  color: $d-grey;
+  color: $d-blue;
   background: $pearl;
 }
 
@@ -85,7 +91,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1545px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -102,7 +108,7 @@ ul {
     max-width: 1200px;
   }
   @media (min-width: 1500px) {
-    max-width: 1545px;
+    max-width: 1200px;
   }
 }
 

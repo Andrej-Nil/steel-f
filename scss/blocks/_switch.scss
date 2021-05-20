@@ -68,7 +68,7 @@
 }
 
 .switch__toggle--is-left {
-  background: $yellow;
+  background: $blue;
   .toggle__lever {
     left: 0;
     transform: translate(0, -50%);
@@ -76,7 +76,7 @@
 }
 
 .switch__toggle--is-right {
-  background: $yellow;
+  background: $blue;
   .toggle__lever {
     left: 100%;
     transform: translate(-100%, -50%);

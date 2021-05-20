@@ -1,9 +1,11 @@
 .path-wrap {
+  height: 120px;
+
+  align-items: center;
   display: none;
-  margin-bottom: 37px;
   padding: $flank;
   @media (min-width: 1090px) {
-    display: block;
+    display: flex;
   }
 }
 
