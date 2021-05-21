@@ -1,7 +1,6 @@
 .modal-card {
-  padding: 10px 15px 10px 0;
-  display: flex;
-  flex-wrap: wrap;
+  border-bottom: 1px solid $milky;
+  margin-bottom: 30px;
 }
 
 .modal-card__desc {
@@ -20,15 +19,11 @@
 .modal-card__preview {
   position: relative;
   overflow: hidden;
-  min-width: 60px;
-  max-width: 60px;
-  height: 60px;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: $bdr5;
   margin-right: 10px;
   @media (min-width: 1090px) {
-    margin-right: 20px;
-    min-width: 100px;
-    height: 100px;
+    margin-bottom: 20px;
   }
 }
 
@@ -38,24 +33,37 @@
 }
 
 .modal-card__title {
-  line-height: 100%;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 110%;
   @media (min-width: 1090px) {
     font-size: 18px;
-    line-height: 115%;
+    line-height: 110%;
     margin-bottom: 20px;
   }
 }
 
-.modal-card__price {
+.modal-card__bottom {
   display: flex;
-  align-items: flex-end;
-  margin-bottom: 10px;
-  width: 100%;
-  @media (min-width: 500px) {
-    width: auto;
-    margin-bottom: 0px;
-  }
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-card__favorite {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.modal-card__counter {
+  margin-right: 70px;
+}
+
+.modal-card__price {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 95.2%;
 }
 
 .modal-card__discount {
@@ -81,74 +89,9 @@
   height: 40px;
 }
 
-.modal-card__counter {
-  margin-right: 10px;
-}
-
 .modal-card__icon {
   margin-right: 10px;
   &:last-child {
     margin-right: 0;
   }
 }
-
-//maket card
-//.modal-card {
-//  padding: 15px 0;
-//  display: flex;
-//}
-
-//.modal-card__preview {
-//  position: relative;
-//  overflow: hidden;
-//  min-width: 100px;
-//  height: 100px;
-//  border-radius: 10px;
-//  margin-right: 20px;
-//}
-
-//.modal-card__img {
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//}
-
-//.modal-card__title {
-//  margin-bottom: 20px;
-//  max-width: 250px;
-//  line-height: 115%;
-//  font-size: 18px;
-//}
-
-//.modal-card__control {
-//  display: flex;
-//}
-
-//.modal-card__icon {
-//  width: 40px;
-//  height: 40px;
-//}
-
-//.modal-card__counter {
-//  margin-right: 10px;
-//}
-
-//.modal-card__icon {
-//  margin-right: 10px;
-//  &:last-child {
-//    margin-right: 0;
-//  }
-//}
-
-//.modal-card__num {
-//  font-weight: 600;
-//  font-size: 24px;
-//  line-height: 95.2%;
-//}
-
-//.modal-card__price {
-//  display: flex;
-//  flex-grow: 1;
-//  align-items: center;
-//  justify-content: center;
-//}

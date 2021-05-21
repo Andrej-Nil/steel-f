@@ -611,7 +611,7 @@ function modalClose(btn) {
 }
 
 function clearFastOrderList() {
-  const lisrWrap = fastOrderModal.querySelector('.js-list-wrap');
+  const lisrWrap = fastOrderModal.querySelector('#modalCardWrap');
   lisrWrap.innerHTML = '';
 }
 
@@ -1009,17 +1009,21 @@ function sendCallbackForm() {
   const inputs = callbackForm.querySelectorAll('.js-input');
   const mailInput = callbackForm.querySelector('.js-mail-input');
   const fileInput = callbackForm.querySelector('.js-file-input');
+  const phoneInput = callbackForm.querySelector('.js-input-phone');
   const fileName = callbackForm.querySelector('.js-file-name');
   const checkboxInput = callbackForm.querySelector('.js-checkbox-input');
   const submitBtn = callbackForm.querySelector('.js-submit');
   const formMessage = callbackForm.querySelector('.js-message');
-
   mailInput.addEventListener('blur', () => {
     checkInput(mailInput);
   })
+
+  phoneInput.addEventListener('blur', () => {
+    checkInput(phoneInput);
+  })
   fileInput.addEventListener('change', () => setFileName(fileInput, fileName));
   submitBtn.addEventListener('click', () => {
-    const result = formCheck(mailInput, checkboxInput);
+    const result = formCheck(mailInput, phoneInput, checkboxInput);
     if (result) {
       postCallback(POST, api)
     }
@@ -1291,11 +1295,17 @@ function setFavoriteIcon(el, boolean) {
   const imgEl = el.querySelector('.js-favorite-img');
   const pathToImage = './img/icon/product-like-icon.svg';
   const pathToImageActive = './img/icon/product-like-active-icon.svg';
+
+  console.log(el)
+
+  //setFavoriteIcon
   if (!boolean) {
     imgEl.src = pathToImage;
+    el.classList.remove('favorite-btn--is-active')
     return;
   }
   imgEl.src = pathToImageActive;
+  el.classList.add('favorite-btn--is-active')
 }
 
 function clearBasketList() {
@@ -1904,7 +1914,7 @@ async function renderCatalogNav() {
 async function renderModalProduct(modal, btn) {
   const api = btn.getAttribute('data-link');
   const article = btn.getAttribute('data-article');
-  const listWrap = modal.querySelector('.js-list-wrap');
+  const listWrap = modal.querySelector('#modalCardWrap');
 
   const data = {
     _token: _token,
@@ -1940,55 +1950,100 @@ async function renderModalProduct(modal, btn) {
       img, favorite_link, count_link, sale,
       price, favorite } = obj;
     let favoriteIcon = null;
+    let cls = null;
     if (favorite) {
-      favoriteIcon = "./img/icon/favorite-active-icon.svg"
+      favoriteIcon = "./img/icon/product-like-active-icon.svg"
+      cls = 'favorite-btn--is-active'
     } else {
-      favoriteIcon = "./img/icon/favorite-icon.svg"
+      favoriteIcon = "./img/icon/product-like-icon.svg"
+      cls = ''
     }
 
-    return (`
+    return (/*html */`
     <div class="modal-card" data-article='${article}'>
-    <div class="modal-card__desc">
-      <div class="modal-card__preview">
-        <a href="${link}" class="modal-card__preview">
-          <img src="${img}" alt="" class="modal-card__img">
-        </a>
-      </div>
-      <h3 class='modal-card__title'>
-        <a href="${link}" class="modal-card__link link">${title}</a>
-      </h3>
+    <div class="modal-card__preview">
+      <a class='modal-card__link' href="${link}">
+        <img src="${img}" alt="" class="modal-card__img">
+      </a>
     </div>
-    <div class="modal-card__price">
-      <div class="modal-card__discount">
-        <span class="discount-sticker">${sale}</span>
-      </div>
-      <span class="modal-card__num">${price}</span>
-    </div>
-    <!--modal-card__control-->
-    <div class="modal-card__control">
 
-      <!--modal-card__counter-->
+    <h4 class='modal-card__title'>
+      <a class='${link}' href="./product-page.html">${title}</a>
+    </h4>
+
+
+    <div class="modal-card__bottom">
+
       <div class="modal-card__counter">
-        <div class="counter js-counter" data-article="${article}" data-link="${count_link}">
+        <div class="counter js-counter" data-link="${count_link}" data-article="1" data-link="testAjax/counter-test.json">
           <span class="counter__sing js-dec">-</span>
 
-          <input type='text' class="counter__quantity js-quantity" value='${count}'>
+          <input type="text" class="counter__quantity js-quantity" value="${count}">
 
           <span class="counter__sing js-inc">+</span>
         </div>
       </div>
-      <!--modal-card__counter-->
 
-      <div class="modal-card__icon ">
-        <span class="btn js-favorite" data-article='${article}' data-link="${favorite_link}">
-          <img class="btn__icon js-favorite-img" src="${favoriteIcon}" alt="">
+      <div class="modal-card__favorite">
+        <span data-article='02' data-link='${favorite_link}'
+          class="btn favorite-btn ${cls} js-favorite">
+          <img class="btn__icon favorite-btn__icon js-favorite-img"
+            src="${favoriteIcon}" alt="">
         </span>
       </div>
 
+      <div class="modal-card__price">
+      ${price}
+      </div>
+
     </div>
-    <!--modal-card__control-->
+
   </div>
     `)
+
+    //  return (`
+    //  <div class="modal-card" data-article='${article}'>
+    //  <div class="modal-card__desc">
+    //    <div class="modal-card__preview">
+    //      <a href="${link}" class="modal-card__preview">
+    //        <img src="${img}" alt="" class="modal-card__img">
+    //      </a>
+    //    </div>
+    //    <h3 class='modal-card__title'>
+    //      <a href="${link}" class="modal-card__link link">${title}</a>
+    //    </h3>
+    //  </div>
+    //  <div class="modal-card__price">
+    //    <div class="modal-card__discount">
+    //      <span class="discount-sticker">${sale}</span>
+    //    </div>
+    //    <span class="modal-card__num">${price}</span>
+    //  </div>
+    //  <!--modal-card__control-->
+    //  <div class="modal-card__control">
+
+    //    <!--modal-card__counter-->
+    //    <div class="modal-card__counter">
+    //      <div class="counter js-counter" data-article="${article}" data-link="${count_link}">
+    //        <span class="counter__sing js-dec">-</span>
+
+    //        <input type='text' class="counter__quantity js-quantity" value='${count}'>
+
+    //        <span class="counter__sing js-inc">+</span>
+    //      </div>
+    //    </div>
+    //    <!--modal-card__counter-->
+
+    //    <div class="modal-card__icon ">
+    //      <span class="btn js-favorite" data-article='${article}' data-link="${favorite_link}">
+    //        <img class="btn__icon js-favorite-img" src="${favoriteIcon}" alt="">
+    //      </span>
+    //    </div>
+
+    //  </div>
+    //  <!--modal-card__control-->
+    //</div>
+    //  `)
   }
 }
 

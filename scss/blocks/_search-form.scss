@@ -5,47 +5,46 @@
 
 .search__input {
   width: 100%;
-  padding: 14px 45px 14px 23px;
+  padding: 10px 50px 10px 40px;
   border: none;
   outline: none;
-
-  font-size: 20px;
-  line-height: 95.2%;
-  color: $d-grey;
+  font-size: 24px;
+  line-height: 130%;
+  color: $d-blue;
 }
 
 .search__input::-webkit-input-placeholder {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 95.2%;
-  color: $l-grey;
+  font-size: 24px;
+  line-height: 130%;
+  color: $grey;
 }
 .search__input::-moz-placeholder {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 95.2%;
-  color: $l-grey;
+  font-size: 24px;
+  line-height: 130%;
+  color: $grey;
 }
 .search__input:-ms-input-placeholder {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 95.2%;
-  color: $l-grey;
+  font-size: 24px;
+  line-height: 130%;
+  color: $grey;
 }
 .search__input:-moz-placeholder {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 95.2%;
-  color: $l-grey;
+  font-size: 24px;
+  line-height: 130%;
+  color: $grey;
 }
 
 .search__sumbit {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: 13px;
+  right: 20px;
 }

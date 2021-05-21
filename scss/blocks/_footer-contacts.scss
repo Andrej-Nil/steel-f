@@ -12,7 +12,6 @@
   align-items: start;
   flex-direction: column;
   padding: 15px 0 22px 0;
-  //min-height: 150px;
 
   font-weight: normal;
   line-height: 200%;
@@ -34,6 +33,7 @@
   width: 100%;
   max-width: 288px;
   line-height: 200%;
+  color: $d-grey;
   margin-right: 111px;
   text-decoration: underline;
   order: 1;
@@ -45,7 +45,7 @@
 .f-contacts__address {
   margin: 0 0 30px 0;
   min-width: 370px;
-
+  color: $d-grey;
   font-size: 18px;
   line-height: 130%;
   @media (min-width: 900px) {
@@ -62,6 +62,7 @@
   margin: 0 0 30px 0;
   font-size: 18px;
   line-height: 130%;
+
   @media (min-width: 900px) {
     margin: 0;
   }
@@ -72,6 +73,7 @@
 }
 
 .f-contact__link {
+  color: $d-grey;
   cursor: pointer;
 }
 

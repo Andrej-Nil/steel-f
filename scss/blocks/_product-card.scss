@@ -91,10 +91,10 @@
 
 .product-card__discount {
   position: absolute;
+  overflow: hidden;
   top: 0;
-  right: 50px;
-
-  //margin-bottom: 8px;
+  left: 0;
+  border-radius: $bdr5 0 $bdr5 0;
 }
 
 .product-card__number {
@@ -128,8 +128,8 @@
 
 .product-card__favorite {
   position: absolute;
-  background: $white;
-  border-radius: 50%;
+  overflow: hidden;
+  border-radius: 0 $bdr5 0 $bdr5;
   top: 0;
   right: 0;
   width: 50px;

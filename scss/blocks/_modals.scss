@@ -36,7 +36,7 @@
   overflow: hidden;
   transform: translate(-50%, -100%);
   width: 100%;
-  border-radius: 20px;
+  border-radius: $bdr5;
   background: $white;
   transition: 0.3s ease-out;
 }
@@ -47,7 +47,6 @@
 
 .modal__text {
   position: relative;
-  max-width: 450px;
   width: 100%;
   margin-bottom: 20px;
   z-index: 10;
@@ -58,18 +57,17 @@
 
 .modal__title {
   font-weight: 600;
-  font-size: 24px;
+
   line-height: 95.2%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   @media (min-width: 720px) {
-    font-size: 36px;
+    font-size: 44px;
   }
 }
 
 .modal__desc {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 110%;
+  font-size: 18px;
+  line-height: 130%;
   @media (min-width: 720px) {
     font-size: 18px;
   }
@@ -77,7 +75,6 @@
 
 .modal-form {
   position: relative;
-  max-width: 382px;
   width: 100%;
   z-index: 10;
 }
@@ -91,30 +88,14 @@
   z-index: 10;
 }
 
-.modal__bg {
-  position: absolute;
-  display: none;
-  @media (min-width: 720px) {
-    display: block;
-  }
-}
-
 .modal__link {
   margin-top: 25px;
+  padding: 10px 30px 10px 30px;
   max-width: 250px;
   width: 100%;
 }
 
 .modal-thanks__text {
   position: relative;
-  max-width: 450px;
-  width: 100%;
-  z-index: 10;
-}
-
-.modal-thanks__bg {
-  display: block;
-  @media (min-width: 720px) {
-    display: block;
-  }
+  text-align: center;
 }
