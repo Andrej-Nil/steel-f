@@ -12,12 +12,13 @@
 </head>
 
 <body>
-  <div id='app' class="app">
+  <div class="app">
     <header class='header h'>
       <!-- header contact -->
       <div class="h-contact">
         <div class="h-contact__inner container">
           <div class="h-city">
+            <img class='h-city__icon' src="./img/icon/location.svg" alt="" class="">
             <span class='h-city__name'>
               Хабаровск
             </span>
@@ -39,13 +40,6 @@
           <div class="h-callback">
             <span id='feetbackBtn' class="h-callback-btn">Обратный звонок</span>
           </div>
-
-          <div class="h-login">
-            <a href="authorization.html" class=" h-login__link">
-              <span class="h-login-btn">Авторизация</span>
-            </a>
-          </div>
-
         </div>
       </div>
       <!-- header contact -->
@@ -66,11 +60,6 @@
           <!-- header-nav-->
           <nav class="h-nav">
             <ul class="h-nav__list">
-              <li class="h-nav__item">
-                <a href="index.html" class="h-nav__link h-nav__link--is-active">
-                  Главная
-                </a>
-              </li>
 
               <li class="h-nav__item">
                 <a href="catalog.html" class="h-nav__link">
@@ -106,21 +95,21 @@
 
           <nav class="h-nav__icon">
             <ul class="h-nav__list">
-              <li class="h-nav__item">
-
-                <a href="basket.html" class="h-nav__link">
-                  <div class="h-nav__icon">
-                    <span id='basketIndicator' class="h-icon__indicator"></span>
-                    <img class='h-icon__img' src="./img/icon/basket-icon.svg" alt="">
-                  </div>
-                </a>
-              </li>
 
               <li class="h-nav__item">
                 <a href="favorites.html" class="h-nav__link">
                   <div class="h-nav__icon">
                     <span id='favoriteIndicator' class="h-icon__indicator"></span>
                     <img class='h-icon__img' src="./img/icon/favorites-icon.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li class="h-nav__item">
+
+                <a href="basket.html" class="h-nav__link">
+                  <div class="h-nav__icon">
+                    <span id='basketIndicator' class="h-icon__indicator"></span>
+                    <img class='h-icon__img' src="./img/icon/basket-icon.svg" alt="">
                   </div>
                 </a>
               </li>
@@ -139,6 +128,11 @@
       <!-- header main -->
     </header>
 
+    <!--path-->
+    <nav class="path-wrap container">
+    </nav>
+    <!--path-->
+
     <!-- content-wrap -->
     <div class="content-wrap container">
       <!-- left -->
@@ -149,24 +143,7 @@
             <!-- slide -->
             <div data-slide='0' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <div class="main-slide">
-                  <img class="main-slide__img" src="./img/image/main-slide-img-1.png" alt="">
-                  <div class="main-slide__text">
-                    <h3 class="main-slide__title">
-                      Ваш заказ в пути 1
-                    </h3>
-                    <p class='main-slide__desc'>
-                      уже через 1 день после оплаты
-                      заказа
-                    </p>
-                    <div class="main-slide__order">
-                      <span class="main-slide__btn">
-                        Сделать заказ
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
+                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
               </a>
             </div>
             <!-- slide -->
@@ -174,24 +151,7 @@
             <!-- slide -->
             <div data-slide='1' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <div class="main-slide">
-                  <img class="main-slide__img" src="./img/image/main-slide-img-1.png" alt="">
-                  <div class="main-slide__text">
-                    <h3 class="main-slide__title">
-                      Ваш заказ в пути 2
-                    </h3>
-                    <p class='main-slide__desc'>
-                      уже через 1 день после оплаты
-                      заказа
-                    </p>
-                    <div class="main-slide__order">
-                      <span class="main-slide__btn">
-                        Сделать заказ
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
+                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
               </a>
             </div>
             <!-- slide -->
@@ -199,24 +159,7 @@
             <!-- slide -->
             <div data-slide='2' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <div class="main-slide">
-                  <img class="main-slide__img" src="./img/image/main-slide-img-1.png" alt="">
-                  <div class="main-slide__text">
-                    <h3 class="main-slide__title">
-                      Ваш заказ в пути 3
-                    </h3>
-                    <p class='main-slide__desc'>
-                      уже через 1 день после оплаты
-                      заказа
-                    </p>
-                    <div class="main-slide__order">
-                      <span class="main-slide__btn">
-                        Сделать заказ
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
+                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
               </a>
             </div>
             <!-- slide -->
@@ -224,24 +167,7 @@
             <!-- slide -->
             <div data-slide='3' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <div class="main-slide">
-                  <img class="main-slide__img" src="./img/image/main-slide-img-1.png" alt="">
-                  <div class="main-slide__text">
-                    <h3 class="main-slide__title">
-                      Ваш заказ в пути 4
-                    </h3>
-                    <p class='main-slide__desc'>
-                      уже через 1 день после оплаты
-                      заказа
-                    </p>
-                    <div class="main-slide__order">
-                      <span class="main-slide__btn">
-                        Сделать заказ
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
+                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
               </a>
             </div>
             <!-- slide -->
@@ -249,24 +175,7 @@
             <!-- slide -->
             <div data-slide='4' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <div class="main-slide">
-                  <img class="main-slide__img" src="./img/image/main-slide-img-1.png" alt="">
-                  <div class="main-slide__text">
-                    <h3 class="main-slide__title">
-                      Ваш заказ в пути 5
-                    </h3>
-                    <p class='main-slide__desc'>
-                      уже через 1 день после оплаты
-                      заказа
-                    </p>
-                    <div class="main-slide__order">
-                      <span class="main-slide__btn">
-                        Сделать заказ
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
+                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
               </a>
             </div>
             <!-- slide -->
@@ -274,24 +183,7 @@
             <!-- slide -->
             <div data-slide='5' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <div class="main-slide">
-                  <img class="main-slide__img" src="./img/image/main-slide-img-1.png" alt="">
-                  <div class="main-slide__text">
-                    <h3 class="main-slide__title">
-                      Ваш заказ в пути 6
-                    </h3>
-                    <p class='main-slide__desc'>
-                      уже через 1 день после оплаты
-                      заказа
-                    </p>
-                    <div class="main-slide__order">
-                      <span class="main-slide__btn">
-                        Сделать заказ
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
+                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
               </a>
             </div>
             <!-- slide -->
@@ -300,20 +192,20 @@
           </div>
 
           <div class="main-slider__control main-slider__control--prev js-prev">
-            <img class="main-slider__arrow" src="./img/controls/slider-arrow-prev.svg" alt="">
+            <img class="main-slider__arrow" src="./img/controls/main-slider-prev.svg" alt="">
           </div>
 
           <div class="main-slider__control main-slider__control--next js-next">
-            <img class="main-slider__arrow" src="./img/controls/slider-arrow-next.svg" alt="">
+            <img class="main-slider__arrow" src="./img/controls/main-slider-next.svg" alt="">
           </div>
         </div>
         <!-- main-slider -->
 
-        <!-- Выгодные предложения -->
+        <!-- Спецпредложения -->
         <section id='productSlider' class='section section--with-slider'>
 
           <h2 class="section-title">
-            Выгодные предложения
+            Спецпредложения
           </h2>
           <!-- section__content -->
           <div class="section__content">
@@ -324,82 +216,46 @@
               <div class="product-slides js-slider-wrap">
                 <!-- product-slide -->
                 <div class="product-slide js-slide">
-                  <div class="product-slide__card js-product-card">
-                    <div class="product-slide__content">
-                      <div class="product-slide__preview">
-                        <a href="product-page.html" class="product-slide__link">
-                          <img src="./img/image/product-card-img-1.jpg" alt="" class="product-slide__img">
+                  <!-- product-card -->
+                  <div class="product-card mb0 js-product-card">
+                    <div class="product-card__content">
+                      <div class="product-card__preview">
+                        <a href="product-page.html" class="product-card__link">
+                          <img src="./img/image/product-card-img-2.jpg" alt="" class="product-card__img">
                         </a>
                       </div>
-                      <div class="product-slide__info">
-                        <h3 class="product-slide__title">
-                          <a href="product-page.html" class="product-slide__title-link link">
+                      <div class="product-card__info">
+                        <h3 class="product-card__title">
+                          <a href="product-page.html" class="product-card__title-link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
                           </a>
                         </h3>
-                        <div class="product-slide__buy">
-                          <div class="product-slide__price">
-                            <div class="product-slide__discount">
-                              <span class="discount-sticker">-10%</span>
-                            </div>
-                            <span class="product-slide__number">90390 ₽</span>
-                          </div>
-                          <div class="product-slide__btn">
-                            <span data-article='01' data-link='testAjax/in-basket-test.json'
-                              class="product-slide__in-basket js-in-basket js-basket-btn blue-btn">В
-                              корзину</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-slide__favorite">
-                      <span data-article='01' data-link='testAjax/favorite-test.json' class="btn js-favorite">
-                        <img class="btn__icon js-favorite-img" src="./img/icon/favorite-icon.svg" alt="">
-                      </span>
-                    </div>
+                        <div class="product-card__buy">
+                          <div class="product-card__price">
 
-                    <div class="short-order">
-                      <span data-article='01' data-link='testAjax/modal-card.json'
-                        class="short-order__btn white-btn js-fast-order">
-                        Заказать в 1 клик
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <!-- product-slide -->
-
-                <!-- product-slide -->
-                <div class="product-slide js-slide">
-                  <div class="product-slide__card js-product-card">
-                    <div class="product-slide__content">
-                      <div class="product-slide__preview">
-                        <a href="product-page.html" class="product-slide__link">
-                          <img src="./img/image/product-card-img-2.jpg" alt="" class="product-slide__img">
-                        </a>
-                      </div>
-                      <div class="product-slide__info">
-                        <h3 class="product-slide__title">
-                          <a href="product-page.html" class="product-slide__title-link link">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </a>
-                        </h3>
-                        <div class="product-slide__buy">
-                          <div class="product-slide__price">
-                            <div class="product-slide__discount">
-                              <span class="discount-sticker">-10%</span>
-                            </div>
-                            <span class="product-slide__number">90390660 ₽</span>
+                            <span class="product-card__number">903 900 ₽</span>
                           </div>
-                          <div class="product-slide__btn">
+                          <div class="product-card__btn-icon">
+                            <span data-article='02' data-link='testAjax/in-basket-test.json' class="btn js-in-basket">
+                              <img class="btn__icon js-basket-icon" src="./img/icon/card-basket-icon.svg" alt="">
+                            </span>
+                          </div>
+                          <div class="product-card__btn">
                             <span data-article='02' data-link='testAjax/in-basket-test.json'
-                              class="product-slide__in-basket js-in-basket js-basket-btn blue-btn">В корзину</span>
+                              class="product-card__in-basket js-basket-btn js-in-basket white-btn">В корзину</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="product-slide__favorite">
-                      <span data-article='02' data-link='testAjax/favorite-test.json' class="btn js-favorite">
-                        <img class="btn__icon js-favorite-img" src="./img/icon/favorite-icon.svg" alt="">
+
+                    <div class="product-card__discount">
+                      <span class="discount-sticker">-10%</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <span data-article='02' data-link='testAjax/favorite-test.json'
+                        class="btn favorite-btn  js-favorite">
+                        <img class="btn__icon favorite-btn__icon js-favorite-img" src="./img/icon/product-like-icon.svg"
+                          alt="">
                       </span>
                     </div>
 
@@ -410,105 +266,125 @@
                       </span>
                     </div>
                   </div>
+                  <!-- product-card -->
                 </div>
                 <!-- product-slide -->
 
                 <!-- product-slide -->
                 <div class="product-slide js-slide">
-                  <div class="product-slide__card js-product-card">
-                    <div class="product-slide__content">
-                      <div class="product-slide__preview">
-                        <a href="product-page.html" class="product-slide__link">
-                          <img src="./img/image/product-card-img-3.jpg" alt="" class="product-slide__img">
+                  <!-- product-card -->
+                  <div class="product-card mb0 js-product-card">
+                    <div class="product-card__content">
+                      <div class="product-card__preview">
+                        <a href="product-page.html" class="product-card__link">
+                          <img src="./img/image/product-card-img-2.jpg" alt="" class="product-card__img">
                         </a>
                       </div>
-                      <div class="product-slide__info">
-                        <h3 class="product-slide__title">
-                          <a href="product-page.html" class="product-slide__title-link link">
+                      <div class="product-card__info">
+                        <h3 class="product-card__title">
+                          <a href="product-page.html" class="product-card__title-link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
                           </a>
                         </h3>
-                        <div class="product-slide__buy">
-                          <div class="product-slide__price">
-                            <div class="product-slide__discount">
-                              <span class="discount-sticker">-10%</span>
-                            </div>
-                            <span class="product-slide__number">90390 ₽</span>
+                        <div class="product-card__buy">
+                          <div class="product-card__price">
+
+                            <span class="product-card__number">903 900 ₽</span>
                           </div>
-                          <div class="product-slide__btn">
-                            <span data-article='03' data-link='testAjax/in-basket-test.json'
-                              class="product-slide__in-basket js-in-basket js-basket-btn blue-btn">В корзину</span>
+                          <div class="product-card__btn-icon">
+                            <span data-article='02' data-link='testAjax/in-basket-test.json' class="btn js-in-basket">
+                              <img class="btn__icon js-basket-icon" src="./img/icon/card-basket-icon.svg" alt="">
+                            </span>
+                          </div>
+                          <div class="product-card__btn">
+                            <span data-article='02' data-link='testAjax/in-basket-test.json'
+                              class="product-card__in-basket js-basket-btn js-in-basket white-btn">В корзину</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="product-slide__favorite ">
-                      <span data-article='03' data-link='testAjax/favorite-test.json' class="btn js-favorite">
-                        <img class="btn__icon js-favorite-img" src="./img/icon/favorite-active-icon.svg" alt="">
+
+                    <div class="product-card__discount">
+                      <span class="discount-sticker">-10%</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <span data-article='02' data-link='testAjax/favorite-test.json'
+                        class="btn favorite-btn  js-favorite">
+                        <img class="btn__icon favorite-btn__icon js-favorite-img" src="./img/icon/product-like-icon.svg"
+                          alt="">
                       </span>
                     </div>
 
                     <div class="short-order">
-                      <span data-article='03' data-link='testAjax/modal-card.json'
+                      <span data-article='02' data-link='testAjax/modal-card.json'
                         class="short-order__btn white-btn js-fast-order">
                         Заказать в 1 клик
                       </span>
                     </div>
                   </div>
+                  <!-- product-card -->
                 </div>
                 <!-- product-slide -->
 
                 <!-- product-slide -->
                 <div class="product-slide js-slide">
-                  <div class="product-slide__card js-product-card">
-                    <div class="product-slide__content">
-                      <div class="product-slide__preview">
-                        <a href="product-page.html" class="product-slide__link">
-                          <img src="./img/image/product-card-img-4.jpg" alt="" class="product-slide__img">
+                  <!-- product-card -->
+                  <div class="product-card mb0 js-product-card">
+                    <div class="product-card__content">
+                      <div class="product-card__preview">
+                        <a href="product-page.html" class="product-card__link">
+                          <img src="./img/image/product-card-img-2.jpg" alt="" class="product-card__img">
                         </a>
                       </div>
-                      <div class="product-slide__info">
-                        <h3 class="product-slide__title">
-                          <a href="product-page.html" class="product-slide__title-link link">
+                      <div class="product-card__info">
+                        <h3 class="product-card__title">
+                          <a href="product-page.html" class="product-card__title-link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
                           </a>
                         </h3>
-                        <div class="product-slide__buy">
-                          <div class="product-slide__price">
-                            <div class="product-slide__discount">
-                              <span class="discount-sticker">-10%</span>
-                            </div>
-                            <span class="product-slide__number">90390 ₽</span>
+                        <div class="product-card__buy">
+                          <div class="product-card__price">
+
+                            <span class="product-card__number">903 900 ₽</span>
                           </div>
-                          <div class="product-slide__btn">
-                            <span data-article='04' data-link='testAjax/in-basket-test.json'
-                              class="product-slide__in-basket js-in-basket js-basket-btn blue-btn">В
-                              корзину</span>
+                          <div class="product-card__btn-icon">
+                            <span data-article='02' data-link='testAjax/in-basket-test.json' class="btn js-in-basket">
+                              <img class="btn__icon js-basket-icon" src="./img/icon/card-basket-icon.svg" alt="">
+                            </span>
+                          </div>
+                          <div class="product-card__btn">
+                            <span data-article='02' data-link='testAjax/in-basket-test.json'
+                              class="product-card__in-basket js-basket-btn js-in-basket white-btn">В корзину</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="product-slide__favorite ">
-                      <span data-article='04' data-link='testAjax/favorite-test.json' class="btn js-favorite">
-                        <img class="btn__icon  js-favorite-img" src="./img/icon/favorite-icon.svg" alt="">
+
+                    <div class="product-card__discount">
+                      <span class="discount-sticker">-10%</span>
+                    </div>
+                    <div class="product-card__favorite">
+                      <span data-article='02' data-link='testAjax/favorite-test.json'
+                        class="btn favorite-btn  js-favorite">
+                        <img class="btn__icon favorite-btn__icon js-favorite-img" src="./img/icon/product-like-icon.svg"
+                          alt="">
                       </span>
                     </div>
 
                     <div class="short-order">
-                      <span data-article='04' data-link='testAjax/modal-card.json'
+                      <span data-article='02' data-link='testAjax/modal-card.json'
                         class="short-order__btn white-btn js-fast-order">
                         Заказать в 1 клик
                       </span>
                     </div>
                   </div>
+                  <!-- product-card -->
                 </div>
                 <!-- product-slide -->
               </div>
               <!--product-slides-->
             </div>
             <!-- product-slider -->
-
-
           </div>
           <!-- section__content -->
 
@@ -516,7 +392,7 @@
           <div class="section-controls">
 
             <span class="section-arrow js-prev">
-              <img src="./img/controls/slider-arrow-prev.svg" alt="" class="section-arrow__img">
+              <img src="./img/controls/section-arrow-prew.svg" alt="" class="section-arrow__img">
             </span>
 
             <a href="#!" class="section-link blue-btn ">
@@ -524,18 +400,18 @@
             </a>
 
             <span class="section-arrow js-next">
-              <img src="./img/controls/slider-arrow-next.svg" alt="" class="section-arrow__img">
+              <img src="./img/controls/section-arrow-next.svg" alt="" class="section-arrow__img">
             </span>
 
           </div>
           <!-- section-controls -->
         </section>
-        <!-- Выгодные предложения -->
+        <!-- Спецпредложения -->
 
-        <!-- Что вас интересует? -->
+        <!-- Каталог -->
         <section class="section">
           <h2 class="section-title">
-            Что вас интересует?
+            Каталог
           </h2>
 
           <!-- section__content -->
@@ -545,27 +421,25 @@
               <!-- subsection-card -->
               <a href='#!' class="subsection-card">
                 <div class="subsection-card__content">
+                  <img class="subsection-card__img" src="./img/icon/boxes-icon.svg" alt="">
                   <h3 class="subsection-card__title">
                     Продукция
                   </h3>
 
-                  <img class="subsection-card__arrow" src="./img/icon/long-arrow.svg" alt="">
                 </div>
-
-                <img src="./img/image/armature.png" alt="" class="subsection-card__img">
               </a>
               <!-- subsection-card -->
 
               <!-- subsection-card -->
               <a href='#!' class="subsection-card subsection-card--right">
                 <div class="subsection-card__content">
+                  <img class="subsection-card__img" src="./img/icon/tools-icon.svg" alt="">
                   <h3 class="subsection-card__title">
                     Услуги
                   </h3>
 
-                  <img class="subsection-card__arrow" src="./img/icon/long-arrow.svg" alt="">
+
                 </div>
-                <img src="./img/image/machine-tool.png" alt="" class="subsection-card__img subsection-card__img--right">
               </a>
               <!-- subsection-card -->
             </div>
@@ -575,16 +449,16 @@
 
 
         </section>
-        <!-- Что вас интересует? -->
+        <!-- Каталог -->
 
         <!--section-slider Прокат-->
         <div id='sectionSlider' class="section-slider slider">
           <div class="section-slider__controls">
             <span class="section-slider__arrow section-arrow js-prev">
-              <img src="./img/controls/slider-arrow-prev.svg" alt="" class="section-slider__arrow section-arrow__img">
+              <img src="./img/controls/section-arrow-prew.svg" alt="" class="section-slider__arrow section-arrow__img">
             </span>
             <span class="section-slider__arrow section-arrow js-next">
-              <img src="./img/controls/slider-arrow-next.svg" alt="" class="section-arrow__img">
+              <img src="./img/controls/section-arrow-next.svg" alt="" class="section-arrow__img">
             </span>
           </div>
           <!--section-slides-->
@@ -607,9 +481,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-1.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -621,9 +495,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-2.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -635,9 +509,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-3.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -649,21 +523,19 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-4.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
-
-
                   </div>
                   <!-- catalog-cards -->
                 </div>
                 <!-- section__content -->
 
                 <!-- section-controls -->
-                <div class="section-controls mt10">
+                <div class="section-controls">
                   <a href="#!" class="section-link blue-btn">
                     Посмотреть все
                   </a>
@@ -693,9 +565,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-1.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -707,9 +579,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-2.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -721,9 +593,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-3.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -735,21 +607,19 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-4.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
-
-
                   </div>
                   <!-- catalog-cards -->
                 </div>
                 <!-- section__content -->
 
                 <!-- section-controls -->
-                <div class="section-controls mt10">
+                <div class="section-controls">
                   <a href="#!" class="section-link blue-btn">
                     Посмотреть все
                   </a>
@@ -779,9 +649,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-1.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -793,9 +663,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-2.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -807,9 +677,9 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-3.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
@@ -821,21 +691,19 @@
                           <h4 class="rolled-card__title">
                             Алюминиевый
                           </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
+                          <img src="./img/image/rolled-dard.jpg" alt="" class="rolled-card__img">
                         </div>
-                        <img src="./img/image/categories-img-4.jpg" alt="" class="rolled-card__img">
+
                       </a>
                     </div>
                     <!-- catalog-card -->
-
-
                   </div>
                   <!-- catalog-cards -->
                 </div>
                 <!-- section__content -->
 
                 <!-- section-controls -->
-                <div class="section-controls mt10">
+                <div class="section-controls">
                   <a href="#!" class="section-link blue-btn">
                     Посмотреть все
                   </a>
@@ -846,93 +714,6 @@
               </section>
             </div>
             <!--section-slide-->
-
-            <!--section-slide-->
-            <div class="section-slide slide js-slide">
-              <section class="section">
-                <h2 class="section-title">
-                  Прокат
-                </h2>
-
-                <!-- section__content -->
-                <div class="section__content">
-                  <!-- catalog-cards -->
-                  <div class="rolled-cards">
-                    <!-- catalog-card -->
-                    <div class="rolled-card">
-                      <a class='rolled-card__link' href="categories1.html">
-                        <div class="rolled-card__content">
-                          <h4 class="rolled-card__title">
-                            Алюминиевый
-                          </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
-                        </div>
-                        <img src="./img/image/categories-img-1.jpg" alt="" class="rolled-card__img">
-                      </a>
-                    </div>
-                    <!-- catalog-card -->
-
-                    <!-- catalog-card -->
-                    <div class="rolled-card">
-                      <a class='rolled-card__link' href="categories1.html">
-                        <div class="rolled-card__content">
-                          <h4 class="rolled-card__title">
-                            Алюминиевый
-                          </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
-                        </div>
-                        <img src="./img/image/categories-img-2.jpg" alt="" class="rolled-card__img">
-                      </a>
-                    </div>
-                    <!-- catalog-card -->
-
-                    <!-- catalog-card -->
-                    <div class="rolled-card">
-                      <a class='rolled-card__link' href="categories1.html">
-                        <div class="rolled-card__content">
-                          <h4 class="rolled-card__title">
-                            Алюминиевый
-                          </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
-                        </div>
-                        <img src="./img/image/categories-img-3.jpg" alt="" class="rolled-card__img">
-                      </a>
-                    </div>
-                    <!-- catalog-card -->
-
-                    <!-- catalog-card -->
-                    <div class="rolled-card">
-                      <a class='rolled-card__link' href="categories1.html">
-                        <div class="rolled-card__content">
-                          <h4 class="rolled-card__title">
-                            Алюминиевый
-                          </h4>
-                          <img src="./img/icon/long-arrow.svg" alt="" class="rolled-card__arrow">
-                        </div>
-                        <img src="./img/image/categories-img-4.jpg" alt="" class="rolled-card__img">
-                      </a>
-                    </div>
-                    <!-- catalog-card -->
-
-
-                  </div>
-                  <!-- catalog-cards -->
-                </div>
-                <!-- section__content -->
-
-                <!-- section-controls -->
-                <div class="section-controls mt10">
-                  <a href="#!" class="section-link blue-btn">
-                    Посмотреть все
-                  </a>
-
-                </div>
-                <!-- section-controls -->
-
-              </section>
-            </div>
-            <!--section-slide-->
-
           </div>
           <!--section-slides-->
         </div>
@@ -940,92 +721,74 @@
 
         <!--Обратная связь -->
         <section class="section">
-          <h2 class="section-title">
-            Обратная связь
-          </h2>
-
           <!-- section__content -->
           <div class="section__content">
             <!-- callback -->
             <div class="callback">
               <!-- callback-form -->
               <!-- callback-form__top -->
-              <div class="callback-form__top">
-                <h4 class='callback-form__title'>
-                  Получите точный расчет
-                </h4>
-                <p class="callback-form__desc">
-                  Загрузите файл с перечнем необходимых позиций
-                  и в ответном письме мы вышлем Вам точный расчет
-                </p>
-              </div>
+              <h4 class='callback-form__title'>
+                Получите точный расчет
+              </h4>
+              <p class="callback-form__desc">
+                Загрузите спецификацию, наш менеджер рассчитает стоимость заказа
+              </p>
               <!-- callback-form__top -->
               <!--callback-form__content-->
               <div class="callback-form__content">
                 <form id='callbackForm' enctype="multipart/form-data" action="testAjax/test-simple-form.json"
                   method="POST" class='callback-form'>
-
-                  <!--callback__inputs-->
-                  <div class="callback__inputs inputs-block">
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Имя
-                      </label>
-                      <input type="text" class="input js-input js-name-input" name='name' placeholder="Константин">
-                    </div>
-
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Почта
-                      </label>
-                      <input type="text" class="input js-input js-mail-input" name='email'
-                        placeholder="Kostya228@gmail.com">
-                    </div>
-
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Сообщение
-                      </label>
-                      <textarea class="input textarea js-text-input" name='message'
-                        placeholder="Мне нужно быстро доставить"></textarea>
-                    </div>
-
-                    <div class="input-upload">
-                      <label class="input-upload__label">
-                        <img src="./img/icon/clip-icon.svg" alt="" class="input-upload__img">
-                        <span class='input-upload__text js-file-name'>Прикрепить файл</span>
-                        <input type="file" name='files' class="input-upload__file js-input js-file-input">
-                      </label>
-                    </div>
-                    <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
-
-                    <div class="input-check js-checkbox">
-                      <label class="input-check__label">
-                        <input type="checkbox" class='input-check__checkbox js-checkbox-input' name='consent' checked>
-                        <span class="input-check__fake">
-
-                        </span>
-                        <span class="input-check__text">
-                          Даю согласие на обработку моих персональных данных
-                        </span>
-
-                      </label>
-                    </div>
-                    <!--callback__inputs-->
-                  </div>
-                  <!--callback__inputs-->
-
                   <div class='form-error'>
                     <p class="form-error__message js-message">
                       Ошибка отправки
                     </p>
                   </div>
+                  <!--callback__inputs-->
+                  <div class="callback__inputs inputs-block">
+                    <input type="text" class="callback__input input js-input js-name-input" name='name'
+                      placeholder="Имя">
 
+                    <input type="text" class="callback__input input js-input-phone js-input" name='phone'
+                      placeholder="+7 922 888 88 88">
+
+                    <input type="text" class="callback__input input js-input js-mail-input" name='email'
+                      placeholder="E-mail">
+
+                    <input type="text" class=" callback__input input js-text-input" name='message'
+                      placeholder="Коментарий">
+
+                    <div class="input-upload callback__input">
+                      <label class="input-upload__label">
+                        <div class='input-upload__btn white-btn'>Прикрепить спецификацию</div>
+                        <input type="file" name='files' class="input-upload__file js-input js-file-input">
+                        <p class='input-upload__text'>
+                          <span class="input-upload__text-title">Добавлен
+                            файл: </span>
+                          <span class='js-file-name'>загрузить</span>
+                        </p>
+                      </label>
+                    </div>
+
+                    <div class="form__send">
+                      <button class='input-submit blue-btn js-submit' type='submit'>Отправить заявку</button>
+
+                      <div class="input-check js-checkbox">
+                        <label class="input-check__label">
+                          <input type="checkbox" class='input-check__checkbox js-checkbox-input' name='consent' checked>
+                          <span class="input-check__fake">
+
+                          </span>
+                          <span class="input-check__text">
+                            Я прочитал и согласен с
+                            <a href="#!" class='input-check__link'>правилами обработки персональных данных</a>
+                          </span>
+
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--callback__inputs-->
                 </form>
-                <!-- callback-form -->
-                <div class="callback-right">
-                  <img class="callback-right__img" src="./img/image/manager.jpg" alt="">
-                </div>
               </div>
               <!--callback-form__content-->
             </div>
@@ -1037,10 +800,10 @@
         </section>
         <!--Обратная связь -->
 
-        <!-- Популярные товары -->
+        <!-- Хиты продаж -->
         <section id='popularGoods' class="section">
           <h2 class="section-title">
-            Популярные товары
+            Хиты продаж
           </h2>
 
           <!-- section__content -->
@@ -1053,11 +816,12 @@
                 <div data-slide='0' class="slide js-slide">
                   <!-- small-cards-wrap -->
                   <div class="small-cards-wrap">
+
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
                         <a href="product-page.html" class="small-card__img-link">
-                          <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
                         </a>
                       </div>
                       <div class="small-card__info">
@@ -1068,8 +832,11 @@
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            0 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1081,7 +848,7 @@
                     <div class="small-card">
                       <div class="small-card__preview">
                         <a href="product-page.html" class="small-card__img-link">
-                          <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
                         </a>
                       </div>
                       <div class="small-card__info">
@@ -1092,8 +859,11 @@
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1105,7 +875,7 @@
                     <div class="small-card">
                       <div class="small-card__preview">
                         <a href="product-page.html" class="small-card__img-link">
-                          <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
                         </a>
                       </div>
                       <div class="small-card__info">
@@ -1116,8 +886,11 @@
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1129,7 +902,7 @@
                     <div class="small-card">
                       <div class="small-card__preview">
                         <a href="product-page.html" class="small-card__img-link">
-                          <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
                         </a>
                       </div>
                       <div class="small-card__info">
@@ -1140,8 +913,11 @@
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1158,21 +934,27 @@
                 <div data-slide='1' class="slide js-slide">
                   <!-- small-cards-wrap -->
                   <div class="small-cards-wrap">
+
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            1 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1183,18 +965,23 @@
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1205,18 +992,23 @@
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1227,24 +1019,30 @@
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
 
                     </div>
                     <!-- small-card -->
+
                   </div>
                   <!-- small-cards-wrap -->
                 </div>
@@ -1254,21 +1052,27 @@
                 <div data-slide='2' class="slide js-slide">
                   <!-- small-cards-wrap -->
                   <div class="small-cards-wrap">
+
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            2 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1279,18 +1083,23 @@
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1301,18 +1110,23 @@
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
+                          </span>
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1323,48 +1137,23 @@
                     <!-- small-card -->
                     <div class="small-card">
                       <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
+                        <a href="product-page.html" class="small-card__img-link">
+                          <img src="./img/image/small-card-img-1.jpg" alt="" class="small-card__img">
+                        </a>
                       </div>
                       <div class="small-card__info">
                         <div class="small-card__text">
-                          <h4 class="small-card__title">
+                          <a href='product-page.html' class="small-card__link link">
                             Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
+                          </a>
                         </div>
 
                         <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
+                          <span class="small-card__old">
+                            90900 ₽
                           </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-                  </div>
-                  <!-- small-cards-wrap -->
-                </div>
-                <!-- slide -->
-
-                <!-- slide -->
-                <div data-slide='3' class="slide js-slide">
-                  <!-- small-cards-wrap -->
-                  <div class="small-cards-wrap">
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            3 ₽
+                          <span class="small-card__new">
+                            999000 ₽
                           </span>
                         </div>
                       </div>
@@ -1372,263 +1161,6 @@
                     </div>
                     <!-- small-card -->
 
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-                  </div>
-                  <!-- small-cards-wrap -->
-                </div>
-                <!-- slide -->
-
-                <!-- slide -->
-                <div data-slide='4' class="slide js-slide">
-                  <!-- small-cards-wrap -->
-                  <div class="small-cards-wrap">
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            4 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-                  </div>
-                  <!-- small-cards-wrap -->
-                </div>
-                <!-- slide -->
-
-                <!-- slide -->
-                <div data-slide='5' class="slide js-slide">
-                  <!-- small-cards-wrap -->
-                  <div class="small-cards-wrap">
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            5 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
-
-                    <!-- small-card -->
-                    <div class="small-card">
-                      <div class="small-card__preview">
-                        <img src="./img/image/small-card-img.jpg" alt="" class="small-card__img">
-                      </div>
-                      <div class="small-card__info">
-                        <div class="small-card__text">
-                          <h4 class="small-card__title">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
-                          </h4>
-                        </div>
-
-                        <div class="small-card__price">
-                          <span class="small-card__number">
-                            8900000 ₽
-                          </span>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- small-card -->
                   </div>
                   <!-- small-cards-wrap -->
                 </div>
@@ -1658,7 +1190,7 @@
           <div class="section-controls">
 
             <span class="section-arrow js-prev">
-              <img src="./img/controls/slider-arrow-prev.svg" alt="" class="section-arrow__img">
+              <img src="./img/controls/section-arrow-prew.svg" alt="" class="section-arrow__img">
             </span>
 
             <a href="#!" class="section-link blue-btn">
@@ -1666,13 +1198,13 @@
             </a>
 
             <span class="section-arrow js-next">
-              <img src="./img/controls/slider-arrow-next.svg" alt="" class="section-arrow__img">
+              <img src="./img/controls/section-arrow-next.svg" alt="" class="section-arrow__img">
             </span>
 
           </div>
           <!-- section-controls -->
         </section>
-        <!-- Популярные товары -->
+        <!-- Хиты продаж -->
 
         <!--Новости -->
         <section id='newsSlider' class="section">
@@ -1692,7 +1224,7 @@
                   <div class="news-slide__card">
                     <div class="news-slide__preview">
                       <a href="news.html" class="news-slide__preview-link">
-                        <img src="./img/image/news-card-slide-1.jpg" alt="" class="news-slide__img">
+                        <img src="./img/image/slider-news-card-img.jpg" alt="" class="news-slide__img">
                       </a>
                     </div>
 
@@ -1706,74 +1238,11 @@
                       <p class="news-slide__desc">
                         Когда предстоит демонтаж сложных водопроводных и канализационных систем, устаревших
                         трубопроводов,
-                        дымоходов, необходимо участие экспертов. Они контролируют ход работ, следят за соблюдением
-                        строительных норм, отвечают за отсутствие травматизма и повреждений имущества при сносе труб.
-                        Специалисты ПКФ Цветная металлургия выполняют задачу аккуратно, быстро, слаженно, соблюдая
-                        действующие нормы безопасности.
+                        дымоходов, необходимо участие экспертов.
 
                       </p>
                       <div class="news-slide__btn">
-                        <a href="news.html" class="news-slide__link dark-btn">Подробнее</a>
-                      </div>
-
-                    </div>
-                  </div>
-                  <!--news-slide__card -->
-
-                  <!--news-slide__card -->
-                  <div class="news-slide__card">
-                    <div class="news-slide__preview">
-                      <a href="news.html" class="news-slide__preview-link">
-                        <img src="./img/image/news-card-slide-2.jpg" alt="" class="news-slide__img">
-                      </a>
-                    </div>
-
-                    <div class="news-slide__info">
-                      <h3 class='news-slide__title'>
-                        <a href="news.html" class="news-slide__title-link link">
-                          Варианты фундамента для вашего дома
-                        </a>
-                      </h3>
-
-                      <p class="news-slide__desc">
-                        Главной задачей перед постройкой дома является определение того, из какого материала строить
-                        дом.
-                        Самым дорогим и долгим считается строительство дома из кирпича. Такой вариант обеспечивает
-                        неплохое утепление и высокую долговечность вашего дома. Но придется потратить больше средств. Да
-                        и
-                        укладывание кирпичной кладки процесс долгий и скрупулезный.
-                      </p>
-                      <div class="news-slide__btn">
-                        <a href="news.html" class="news-slide__link dark-btn">Подробнее</a>
-                      </div>
-
-                    </div>
-                  </div>
-                  <!--news-slide__card -->
-
-                  <!--news-slide__card -->
-                  <div class="news-slide__card">
-                    <div class="news-slide__preview">
-                      <a href="news.html" class="news-slide__preview-link">
-                        <img src="./img/image/news-card-slide-3.jpg" alt="" class="news-slide__img">
-                      </a>
-                    </div>
-
-                    <div class="news-slide__info">
-                      <h3 class='news-slide__title'>
-                        <a href="news.html" class="news-slide__title-link link">
-                          Патинирование латуни, меди и бронзы
-                        </a>
-                      </h3>
-
-                      <p class="news-slide__desc">
-                        Патинирование – придавание металлам тёмного оттенка. Для этого нужен гипосульфит и 7-10 капель
-                        любой кислоты: серной, соляной или азотной. Размешайте гипосульфит (50 грамм) в 1 литре воды,
-                        добавьте осторожно кислоту. Не пугайтесь бурной реакции, она будет кратковременна и не опасна, с
-                        небольшим выделением газа. Раствор станет мутным, теперь можно приступать к патинированию.
-                      </p>
-                      <div class="news-slide__btn">
-                        <a href="news.html" class="news-slide__link dark-btn">Подробнее</a>
+                        <a href="news.html" class="news-slide__link white-btn">Подробнее</a>
                       </div>
 
                     </div>
@@ -1788,7 +1257,7 @@
                   <div class="news-slide__card">
                     <div class="news-slide__preview">
                       <a href="news.html" class="news-slide__preview-link">
-                        <img src="./img/image/news-card-slide-1.jpg" alt="" class="news-slide__img">
+                        <img src="./img/image/slider-news-card-img.jpg" alt="" class="news-slide__img">
                       </a>
                     </div>
 
@@ -1802,73 +1271,11 @@
                       <p class="news-slide__desc">
                         Когда предстоит демонтаж сложных водопроводных и канализационных систем, устаревших
                         трубопроводов,
-                        дымоходов, необходимо участие экспертов. Они контролируют ход работ, следят за соблюдением
-                        строительных норм, отвечают за отсутствие травматизма и повреждений имущества при сносе труб.
-                        Специалисты ПКФ Цветная металлургия выполняют задачу аккуратно, быстро, слаженно, соблюдая
-                        действующие нормы безопасности.
+                        дымоходов, необходимо участие экспертов.
+
                       </p>
                       <div class="news-slide__btn">
-                        <a href="news.html" class="news-slide__link dark-btn">Подробнее</a>
-                      </div>
-
-                    </div>
-                  </div>
-                  <!--news-slide__card -->
-
-                  <!--news-slide__card -->
-                  <div class="news-slide__card">
-                    <div class="news-slide__preview">
-                      <a href="news.html" class="news-slide__preview-link">
-                        <img src="./img/image/news-card-slide-2.jpg" alt="" class="news-slide__img">
-                      </a>
-                    </div>
-
-                    <div class="news-slide__info">
-                      <h3 class='news-slide__title'>
-                        <a href="news.html" class="news-slide__title-link link">
-                          Варианты фундамента для вашего дома
-                        </a>
-                      </h3>
-
-                      <p class="news-slide__desc">
-                        Главной задачей перед постройкой дома является определение того, из какого материала строить
-                        дом.
-                        Самым дорогим и долгим считается строительство дома из кирпича. Такой вариант обеспечивает
-                        неплохое утепление и высокую долговечность вашего дома. Но придется потратить больше средств. Да
-                        и
-                        укладывание кирпичной кладки процесс долгий и скрупулезный.
-                      </p>
-                      <div class="news-slide__btn">
-                        <a href="news.html" class="news-slide__link dark-btn">Подробнее</a>
-                      </div>
-
-                    </div>
-                  </div>
-                  <!--news-slide__card -->
-
-                  <!--news-slide__card -->
-                  <div class="news-slide__card">
-                    <div class="news-slide__preview">
-                      <a href="news.html" class="news-slide__preview-link">
-                        <img src="./img/image/news-card-slide-3.jpg" alt="" class="news-slide__img">
-                      </a>
-                    </div>
-
-                    <div class="news-slide__info">
-                      <h3 class='news-slide__title'>
-                        <a href="news.html" class="news-slide__title-link link">
-                          Патинирование латуни, меди и бронзы
-                        </a>
-                      </h3>
-
-                      <p class="news-slide__desc">
-                        Патинирование – придавание металлам тёмного оттенка. Для этого нужен гипосульфит и 7-10 капель
-                        любой кислоты: серной, соляной или азотной. Размешайте гипосульфит (50 грамм) в 1 литре воды,
-                        добавьте осторожно кислоту. Не пугайтесь бурной реакции, она будет кратковременна и не опасна, с
-                        небольшим выделением газа. Раствор станет мутным, теперь можно приступать к патинированию.
-                      </p>
-                      <div class="news-slide__btn">
-                        <a href="news.html" class="news-slide__link dark-btn">Подробнее</a>
+                        <a href="news.html" class="news-slide__link white-btn">Подробнее</a>
                       </div>
 
                     </div>
@@ -1876,6 +1283,41 @@
                   <!--news-slide__card -->
                 </div>
                 <!--news-slide -->
+
+                <!--news-slide -->
+                <div class="news-slide slide js-slide">
+                  <!--news-slide__card -->
+                  <div class="news-slide__card">
+                    <div class="news-slide__preview">
+                      <a href="news.html" class="news-slide__preview-link">
+                        <img src="./img/image/slider-news-card-img.jpg" alt="" class="news-slide__img">
+                      </a>
+                    </div>
+
+                    <div class="news-slide__info">
+                      <h3 class='news-slide__title'>
+                        <a href="news.html" class="news-slide__title-link link">
+                          Демонтаж стальных труб от ПКФ Цветная металлургия
+                        </a>
+                      </h3>
+
+                      <p class="news-slide__desc">
+                        Когда предстоит демонтаж сложных водопроводных и канализационных систем, устаревших
+                        трубопроводов,
+                        дымоходов, необходимо участие экспертов.
+
+                      </p>
+                      <div class="news-slide__btn">
+                        <a href="news.html" class="news-slide__link white-btn">Подробнее</a>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--news-slide__card -->
+                </div>
+                <!--news-slide -->
+
+
               </div>
               <!--news-slides -->
             </div>
@@ -1887,7 +1329,7 @@
           <div class="section-controls">
 
             <span class="section-arrow js-prev">
-              <img src="./img/controls/slider-arrow-prev.svg" alt="" class="section-arrow__img">
+              <img src="./img/controls/section-arrow-prew.svg" alt="" class="section-arrow__img">
             </span>
 
             <a href="#!" class="section-link blue-btn">
@@ -1895,13 +1337,14 @@
             </a>
 
             <span class="section-arrow js-next">
-              <img src="./img/controls/slider-arrow-next.svg" alt="" class="section-arrow__img">
+              <img src="./img/controls/section-arrow-next.svg" alt="" class="section-arrow__img">
             </span>
 
           </div>
           <!-- section-controls -->
         </section>
         <!--Новости -->
+
       </div>
       <!-- left -->
 
@@ -1933,7 +1376,7 @@
           <div class="f-logo">
             <div class="logo">
               <a href="index.html" class="logo__link">
-                <img class='logo__img' src="./img/logo.svg" alt="цветная металлургия">
+                <img class='logo__img' src="./img/icon/footer-logo.svg" alt="цветная металлургия">
               </a>
             </div>
           </div>
@@ -1944,14 +1387,8 @@
             <ul class="f-nav__list">
 
               <li class="f-nav__item">
-                <a href="index.html" class="f-nav__link link">
-                  Главная
-                </a>
-              </li>
-
-              <li class="f-nav__item">
                 <a href="catalog.html" class="f-nav__link link">
-                  Коталог
+                  Кaталог
                 </a>
               </li>
 
@@ -1998,32 +1435,21 @@
         <!--f-contacts__inner-->
         <div class="f-contacts__inner container">
           <a class='privacy-policy' href="#!">
-            Политика конфиденциальности Соглашение на обработку ПД
+            Политика конфиденциальности <br />
+            Соглашение на обработку персональных давнных
           </a>
 
 
           <p class="f-contacts__address">
-            Адрес: 620075, Свердловская область,
-            г. Екатеринбург,улица Малышева,
-            строение 51, этаж 16
+            620075, Свердловская область, Екатеринбург, улица Малышева, строение 51, этаж 16
           </p>
 
           <ul class="f-contacts__list">
-            <li class="f-contact">
-              <span class="f-contact__name">
-                Электронная почта:
-              </span><a href="mailto:info@cm-hab.ru" class="f-contact__link">info@cm-hab.ru</a>
+            <li class="f-contact"><a href="mailto:info@cm-hab.ru" class="f-contact__link">info@cm-hab.ru</a>
             </li>
 
             <li class="f-contact">
-              <span class="f-contact__name">
-                Телефон:
-              </span><a href="tel:+74212529026" class="f-contact__link">+7 (4212) 52-90-26</a>
-            </li>
-
-            <li class="f-contact">
-              <span id='helpBtn' class="f-contact__link f-contact__link--underline">Служба
-                поддержки</span>
+              <a href="tel:+74212529026" class="f-contact__link">+7 (4212) 52-90-26</a>
             </li>
           </ul>
         </div>
@@ -2039,7 +1465,7 @@
           <div class="f-info__list">
 
             <p class="f-info__item">
-              Информация на сайте не является публичной <a href="#!" class="f-info__link">офертой.</a>
+              Информация на сайте не является <a href="#!" class="f-info__link">публичной офертой.</a>
             </p>
 
             <p class="f-info__item">
@@ -2076,25 +1502,15 @@
       </div>
       <!--f-info-->
 
-      <!--f-bootom-->
-      <div class="f-bootom">
-        <!--f-bootom__inner-->
-        <div class="f-bootom__inner container">
-          <!--made-->
-          <div class="made">
-            <span class="made__text">Сайт создан на</span>
-            <a href="#!" class="made__link">
-              <img src="./img/icon/vassortimente-logo.svg" alt="" class="made__logo">
-            </a>
-            <span class="made__text">Пакет: Business </span>
-          </div>
-          <!--made-->
-        </div>
-        <!--f-bootom__inner-->
-      </div>
-      <!--f-bootom-->
-
     </footer>
+
+    <!--up-->
+    <div id='up' class="up">
+      <div id='upwardBtn' class="up-btn">
+        <img src="./img/controls/up-arrow.svg" alt="" class="up-btn__img">
+      </div>
+    </div>
+    <!--up-->
 
     <!--mobile-menu-->
     <nav id='mobileMenu' class="mobile-menu">
@@ -2155,16 +1571,8 @@
     </nav>
     <!--mobile-menu-->
 
-    <!--up-->
-    <div id='up' class="up">
-      <div id='upwardBtn' class="up-btn">
-        <img src="./img/controls/up-arrow.svg" alt="" class="up-btn__img">
-      </div>
-    </div>
-    <!--up-->
-
     <!-- modal windows -->
-    <div id='modalsWrap' class="modals-wrap m">
+    <div id='modalsWrap' class="modals-wrap">
       <div class="bg-modals">
         <!-- connection windows-->
 
@@ -2187,21 +1595,11 @@
               <div class="modal__inputs inputs-block">
 
                 <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Имя
-                  </label>
-                  <input type="text" class="input js-input js-input-name" name='name' placeholder="Константин">
-                </div>
+                <input type="text" class="input js-input js-input-name" name='name' placeholder="Константин">
                 <!--input-with-name-->
 
                 <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Телефон
-                  </label>
-                  <input type="text" class="input js-input js-input-phone" name='phone' placeholder="+7 922 888 88 88">
-                </div>
+                <input type="text" class="input js-input js-input-phone" name='phone' placeholder="+7 922 888 88 88">
                 <!--input-with-name-->
 
                 <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
@@ -2248,88 +1646,6 @@
         </div>
         <!-- feetback -->
 
-        <!-- help -->
-        <div id='help' class="connection-modal modal js-modal">
-          <!--connection-modal__content-->
-          <div class="connection-modal__content">
-            <div class="modal__text">
-              <h4 class="modal__title">
-                Служба поддержки
-              </h4>
-              <p class="modal__desc">
-                Здесь вы можете оставить нам сообщение, касающееся работы сайта, чтобы мы могли стать еще удобнее и
-                функциональнее для Вас
-              </p>
-            </div>
-
-            <form id='helpForm' enctype="multipart/form-data" action="testAjax/test-simple-form.json" method="POST"
-              class='modal-form'>
-              <!--modal__inputs-->
-              <div class="modal__inputs inputs-block">
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Почта
-                  </label>
-                  <input type="text" class="input js-input-email js-input" name='email'
-                    placeholder="Kostya228@gmail.com">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Сообщение
-                  </label>
-                  <textarea class="input textarea js-input-textarea js-input" name='message'
-                    placeholder="Мне нужно быстро доставить"></textarea>
-                </div>
-                <!--input-with-name-->
-
-                <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
-
-                <!--input-check-->
-                <div class="input-check js-checkbox">
-                  <label class="input-check__label">
-                    <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent'>
-                    <span class="input-check__fake">
-
-                    </span>
-                    <span class="input-check__text">
-                      Даю согласие на обработку моих персональных данных
-                    </span>
-
-                  </label>
-                </div>
-                <!--input-check-->
-
-              </div>
-              <!--modal__inputs-->
-
-              <!--modal-form__error-->
-              <div class='form-error'>
-                <p class="form-error__message js-message">
-                  Ошибка отправки
-                </p>
-              </div>
-              <!--modal-form__error-->
-            </form>
-            <div class="modal__close ">
-              <span class="btn js-close-modal">
-                <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
-              </span>
-            </div>
-
-            <div class="modal__bg connection-modal__bg">
-              <img src="./img/image/earth-img.jpg" alt="" class="modal__img connection-modal__img">
-            </div>
-          </div>
-          <!--connection-modal__content-->
-
-        </div>
-        <!-- help -->
-
         <!-- connection-thanks -->
         <div id='connectionThanks' class="connection-thanks modal js-modal">
           <div class="connection-thanks__content">
@@ -2341,7 +1657,7 @@
                 Скоро мы свяжемся с вами!
               </p>
 
-              <a href="index.html" class="modal__link blue-btn">На главную</a>
+              <a href="index.html" class="modal__link white-btn">На главную</a>
             </div>
           </div>
 
@@ -2349,10 +1665,6 @@
             <span class="btn js-close-modal">
               <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
             </span>
-          </div>
-
-          <div class="modal__bg modal-thanks__bg connection-modal__bg">
-            <img src="./img/image/armature-big.jpg" alt="" class="modal__img connection-modal__img">
           </div>
         </div>
         <!-- connection-thanks -->
@@ -2379,36 +1691,16 @@
                   <!--modal__inputs-->
                   <div class="modal__inputs inputs-block">
 
+                    <input type="text" class="input js-input js-input-name" name='name' placeholder="Константин">
 
-                    <!--input-with-name-->
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Телефон
-                      </label>
-                      <input type="text" class="input js-input-phone js-input" name='phone'
-                        placeholder="+7 922 888 88 88">
-                    </div>
-                    <!--input-with-name-->
+                    <input type="text" class="input js-input-phone js-input" name='phone'
+                      placeholder="+7 922 888 88 88">
 
-                    <!--input-with-name-->
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Почта
-                      </label>
-                      <input type="text" class="input js-input-email js-input" name='email'
-                        placeholder="Kostya228@gmail.com">
-                    </div>
-                    <!--input-with-name-->
+                    <input type="text" class="input js-input-email js-input" name='email'
+                      placeholder="Kostya228@gmail.com">
 
-                    <!--input-with-name-->
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Сообщение
-                      </label>
-                      <textarea class="input textarea order__textarea js-input-textarea js-input" name='message'
-                        placeholder="Мне нужно быстро доставить"></textarea>
-                    </div>
-                    <!--input-with-name-->
+                    <textarea class="input textarea order__textarea js-input-textarea js-input" name='message'
+                      placeholder="Мне нужно быстро доставить"></textarea>
 
                     <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
 
@@ -2420,7 +1712,8 @@
 
                         </span>
                         <span class="input-check__text">
-                          Даю согласие на обработку моих персональных данных
+                          Я прочитал и согласен с
+                          <a href="#!" class='input-check__link'>правилами обработки персональных данных</a>
                         </span>
 
                       </label>
@@ -2439,34 +1732,69 @@
                   <!--modal-form__error-->
                 </div>
                 <!--order-inputs-->
-                <div class="order-modal__bg">
-                  <img src="./img/image/armature-order.jpg" alt="" class="modal__img order-modal__img">
-                </div>
               </div>
               <!--order-modal__left-->
 
               <!--order-modal__right-->
               <div class="order-modal__right">
-                <h4 class="modal__title">
+                <h4 class="modal__title order-modal__right-title">
                   Информация о заказе
                 </h4>
 
-                <!--order-modal__list-->
-                <ul class="order-modal__list scroll-bar js-list-wrap">
-                  <li class="order-modal__item">
+                <!--order-modal__card-->
+                <div id="modalCardWrap" class="modal-card__wrap">
+                  <!--<div class="modal-card">
+                    <div class="modal-card__preview">
+                      <a class='modal-card__link' href="./product-page.html">
+                        <img src="./img/image/modal-card-img.jpg" alt="" class="modal-card__img">
+                      </a>
+                    </div>
 
-                  </li>
-                </ul>
-                <!--order-modal__list-->
+                    <h4 class='modal-card__title'>
+                      <a class='modal-card__link link' href="./product-page.html">Алюминиевая
+                        прессованная труба 100х10 мм В95Т1 ГОСТ 18482-79
+                        прессованная труба 100х10 мм В95Т1
+                        ГОСТ 18482-79</a>
+                    </h4>
 
+
+                    <div class="modal-card__bottom">
+
+                      <div class="modal-card__counter">
+                        <div class="counter js-counter" data-article="1" data-link="testAjax/counter-test.json">
+                          <span class="counter__sing js-dec">-</span>
+
+                          <input type="text" class="counter__quantity js-quantity" value="2">
+
+                          <span class="counter__sing js-inc">+</span>
+                        </div>
+                      </div>
+
+                      <div class="modal-card__favorite">
+                        <span data-article='02' data-link='testAjax/favorite-test.json'
+                          class="btn favorite-btn  js-favorite">
+                          <img class="btn__icon favorite-btn__icon js-favorite-img"
+                            src="./img/icon/product-like-icon.svg" alt="">
+                        </span>
+                      </div>
+
+                      <div class="modal-card__price">
+                        8900 ₽
+                      </div>
+
+                    </div>
+
+                  </div>-->
+
+                  <!--order-modal__card-->
+                </div>
                 <div class="order-modal__total">
                   <span class="order-modal__text">Итого:</span>
                   <span id='fastOrderTotalPrice' class="order-modal__price js-total-price">8900 ₽</span>
                 </div>
-              </div>
-              <!--order-modal__right-->
+                <!--order-modal__right-->
 
-            </div>
+              </div>
           </form>
           <div class="modal__close">
             <span id='closeFastOrderBtn' class="btn js-close-modal .js-clean-product">
@@ -2474,134 +1802,132 @@
             </span>
           </div>
         </div>
-        <!--fast order-->
+      </div>
+      <!--fast order-->
 
-        <!--order-->
-        <div id='order' class="connection-modal modal js-modal">
-          <!--connection-modal__content-->
-          <div class="connection-modal__content">
-            <div class="modal__text">
-              <h4 class="modal__title">
-                Заказ на сумму: <span id='orderTotalePrice' class="order
+      <!--order-->
+      <div id='order' class="connection-modal modal js-modal">
+        <!--connection-modal__content-->
+        <div class="connection-modal__content">
+          <div class="modal__text">
+            <h4 class="modal__title">
+              Заказ на сумму: <span id='orderTotalePrice' class="order
                 -total-price js-total-price">900000000000 p</span>
-              </h4>
-              <p class="modal__desc">
-                Оставьте свои контактные данные
-                и наш менеджер свяжется с вами в течении часа
+            </h4>
+            <p class="modal__desc">
+              Оставьте свои контактные данные
+              и наш менеджер свяжется с вами в течении часа
+            </p>
+          </div>
+
+          <form id='orderForm' action="testAjax/order-test.json" method="POST" class='modal-form'>
+            <!--modal__inputs-->
+            <div class="modal__inputs inputs-block">
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Имя
+                </label>
+                <input type="text" class="input js-input-name js-input" name='name' placeholder="Константин">
+              </div>
+              <!--input-with-name-->
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Телефон
+                </label>
+                <input type="text" class="input js-input-phone js-input" name='phone' placeholder="+7 922 888 88 88">
+              </div>
+              <!--input-with-name-->
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Почта
+                </label>
+                <input type="text" class="input js-input-email js-input" name='email' placeholder="Kostya228@gmail.com">
+              </div>
+              <!--input-with-name-->
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Сообщение
+                </label>
+                <textarea class="input textarea js-input-textarea js-input" name='message'
+                  placeholder="Мне нужно быстро доставить"></textarea>
+              </div>
+              <!--input-with-name-->
+
+              <button class='input-submit js-submit blue-btn' type='submit'>Отправить</button>
+
+              <!--input-check-->
+              <div class="input-check js-checkbox">
+                <label class="input-check__label">
+                  <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
+                  <span class="input-check__fake">
+
+                  </span>
+                  <span class="input-check__text">
+                    Я прочитал и согласен с
+                    <a href="#!" class='input-check__link'>правилами обработки персональных данных</a>
+                  </span>
+
+                </label>
+              </div>
+              <!--input-check-->
+
+            </div>
+            <!--modal__inputs-->
+
+
+            <!--modal-form__error-->
+            <div class='form-error'>
+              <p class="form-error__message js-message">
+                Ошибка отправки
               </p>
             </div>
+            <!--modal-form__error-->
 
-            <form id='orderForm' action="testAjax/order-test.json" method="POST" class='modal-form'>
-              <!--modal__inputs-->
-              <div class="modal__inputs inputs-block">
+          </form>
 
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Имя
-                  </label>
-                  <input type="text" class="input js-input-name js-input" name='name' placeholder="Константин">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Телефон
-                  </label>
-                  <input type="text" class="input js-input-phone js-input" name='phone' placeholder="+7 922 888 88 88">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Почта
-                  </label>
-                  <input type="text" class="input js-input-email js-input" name='email'
-                    placeholder="Kostya228@gmail.com">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Сообщение
-                  </label>
-                  <textarea class="input textarea js-input-textarea js-input" name='message'
-                    placeholder="Мне нужно быстро доставить"></textarea>
-                </div>
-                <!--input-with-name-->
-
-                <button class='input-submit js-submit blue-btn' type='submit'>Отправить</button>
-
-                <!--input-check-->
-                <div class="input-check js-checkbox">
-                  <label class="input-check__label">
-                    <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
-                    <span class="input-check__fake">
-
-                    </span>
-                    <span class="input-check__text">
-                      Даю согласие на обработку моих персональных данных
-                    </span>
-
-                  </label>
-                </div>
-                <!--input-check-->
-
-              </div>
-              <!--modal__inputs-->
-
-
-              <!--modal-form__error-->
-              <div class='form-error'>
-                <p class="form-error__message js-message">
-                  Ошибка отправки
-                </p>
-              </div>
-              <!--modal-form__error-->
-
-            </form>
-
-            <div class="modal__close">
-              <span class="btn js-close-modal">
-                <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
-              </span>
-            </div>
-
-            <div class="modal__bg connection-modal__bg">
-              <img src="./img/image/armature-big.jpg" alt="" class="modal__img connection-modal__img">
-            </div>
-          </div>
-          <!--connection-modal__content-->
-        </div>
-        <!--order-->
-        <!-- order windows-->
-        <!--order-thanks-->
-        <div id='orderThanks' class="connection-thanks modal js-modal">
-          <div class="order-thanks__content">
-            <div class="modal-thanks__text">
-              <h4 class="modal__title">
-                Спасибо за ваш заказ
-              </h4>
-              <p class="modal__desc">
-                Скоро мы свяжемся с вами!
-              </p>
-              <a href="index.html" class="modal__link blue-btn">На главную</a>
-            </div>
-          </div>
           <div class="modal__close">
             <span class="btn js-close-modal">
               <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
             </span>
           </div>
-          <div class="modal__bg modal-thanks__bg order-thanks__bg">
-            <img src="./img/image/armature-order.jpg" alt="" class="modal__img connection-modal__img">
+
+          <div class="modal__bg connection-modal__bg">
+            <img src="./img/image/armature-big.jpg" alt="" class="modal__img connection-modal__img">
           </div>
         </div>
-        <!--order-thanks-->
+        <!--connection-modal__content-->
       </div>
+      <!--order-->
+      <!-- order windows-->
+
+      <!--order-thanks-->
+      <div id='orderThanks' class="connection-thanks modal js-modal">
+        <div class="order-thanks__content">
+          <div class="modal-thanks__text">
+            <h4 class="modal__title">
+              Спасибо за ваш заказ
+            </h4>
+            <p class="modal__desc">
+              Скоро мы свяжемся с вами!
+            </p>
+            <a href="index.html" class="modal__link blue-btn white-btn">На главную</a>
+          </div>
+        </div>
+        <div class="modal__close">
+          <span class="btn js-close-modal">
+            <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+          </span>
+        </div>
+      </div>
+      <!--order-thanks-->
     </div>
     <!-- modal windows -->
   </div>

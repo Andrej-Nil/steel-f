@@ -52,8 +52,7 @@ const removeProductBtns = document.querySelectorAll('.js-remove-product');
 
 const elementLinks = document.querySelectorAll('.js-element-link');
 const dropdownsBtns = document.querySelectorAll('.js-dropdown-btn');
-const switchToggles = document.querySelectorAll('[data-switch]');
-const switchFixed = document.querySelector('#switchFixed');
+const catalogTabs = document.querySelector('#catalogTabs');
 const counters = document.querySelectorAll('.js-counter');
 const catalogNav = document.querySelector('#catalogNav');
 const news = document.querySelector('#news');
@@ -78,6 +77,14 @@ let touchPosition = null;
 
 let moveStart = null;
 let moveEnd = null;
+
+if (catalogTabs) {
+  toggleCatalogTabs()
+}
+
+function toggleCatalogTabs() {
+  console.log(catalogTabs)
+}
 
 if (loginForm) {
   loginForm.addEventListener('submit', (e) => {
