@@ -1,31 +1,28 @@
 .news-card {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   background: $white;
+  height: 550px;
+  width: 100%;
+  border-radius: $bdr5;
+  overflow: hidden;
 
-  border-radius: 20px;
-  margin-bottom: 30px;
-
-  &:hover .news-card__title {
-    text-decoration: underline;
-  }
-
-  &:hover .news-card__img {
-    transform: scale(1.1, 1.1);
-  }
-  @media (min-width: 560px) {
-    width: 48%;
-  }
-  @media (min-width: 1500px) {
-    max-width: 515px;
+  @media (min-width: 500px) {
+    min-width: 32%;
+    margin-bottom: 40px;
   }
 }
 
 .news-card__preview {
+  position: relative;
   overflow: hidden;
-  max-height: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  @media (min-width: 500px) {
+    height: auto;
+    margin-bottom: 10px;
+  }
   @media (min-width: 1500px) {
-    margin-bottom: 21px;
+    margin-bottom: 36px;
   }
 }
 
@@ -35,20 +32,70 @@
   transition: 0.2s ease-in-out;
 }
 
-.news-card__desc {
-  padding: 0 15px 35px;
+.news-card__info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 37px;
+  flex-grow: 1;
+  @media (min-width: 500px) {
+    padding: 0 10px 20px;
+  }
   @media (min-width: 1500px) {
-    padding: 0 32px 21px;
+    padding: 0 55px 30px;
+  }
+}
+
+.news-card__title-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  @media (min-width: 500px) {
+    line-height: 100%;
+    font-size: 15px;
+  }
+  @media (min-width: 1090px) {
+    line-height: 100%;
+    font-size: 18px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 24px;
+    line-height: 150%;
   }
 }
 
 .news-card__title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 95.2%;
-  @media (min-width: 1500px) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 110%;
+  @media (min-width: 1090px) {
+    margin-bottom: 20px;
   }
+  @media (min-width: 1500px) {
+    margin-bottom: 30px;
+  }
+}
+
+.news-card__desc {
+  display: none;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 95.2%;
+  color: $d-blue;
+  @media (min-width: 1090px) {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+
+.news-card__btn {
+  margin-top: auto;
+}
+
+.news-card__link {
+  margin: 0 auto;
+  padding: 5px 57px;
+  width: auto;
 }

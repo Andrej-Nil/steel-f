@@ -39,12 +39,6 @@
             <span id='feetbackBtn' class="h-callback-btn">Обратный звонок</span>
           </div>
 
-          <div class="h-login">
-            <a href="authorization.html" class=" h-login__link">
-              <span class="h-login-btn">Авторизация</span>
-            </a>
-          </div>
-
         </div>
       </div>
       <!-- header contact -->
@@ -65,11 +59,6 @@
           <!-- header-nav-->
           <nav class="h-nav">
             <ul class="h-nav__list">
-              <li class="h-nav__item">
-                <a href="index.html" class="h-nav__link">
-                  Главная
-                </a>
-              </li>
 
               <li class="h-nav__item">
                 <a href="catalog.html" class="h-nav__link">
@@ -145,7 +134,7 @@
         <span class="path__slash">\</span>
         <a href="categories1.html" class="path__link">Новости</a>
         <span class="path__slash">\</span>
-        <a href="categories1.html" class="path__link path__link--is-active">Новость</a>
+        <a href="categories1.html" class="path__link">Новость</a>
       </div>
     </nav>
     <!--path-->
@@ -158,42 +147,20 @@
         <!--news-->
         <section class="section">
           <h1 class="section-title">
-            Новости
+            Неподкупность государственных СМИ стала доступной ширнармассам
           </h1>
-          <!--one-news-->
-          <div class="news">
-            <!--one-news__preveiw-->
-            <div class="news__preveiw">
-              <img src="./img/image/one-news-img.jpg" alt="" class="news__img">
 
-              <!-- one-news__nav -->
-              <div class="news__nav">
-                <a href="one-news.html" class="news__link">
-                  <span class="news__arrow section-arrow">
-                    <img src="./img/controls/slider-arrow-prev.svg" alt="" class="section-arrow__img">
-                  </span>
-
-                  <span class="news__link-text">Следующая новость</span>
-                </a>
-
-                <a href="one-news.html" class="news__link">
-
-                  <span class="news__link-text">Предыдущая новость</span>
-                  <span class="news__arrow section-arrow">
-                    <img src="./img/controls/slider-arrow-next.svg" alt="" class="section-arrow__img">
-                  </span>
-                </a>
-              </div>
-              <!-- one-news__nav -->
-
+          <!--news-card-->
+          <div class="news-card">
+            <div class="news-card__preview">
+              <a href="one-news.html" class="news-card__preview-link">
+                <img src="./img/image/slider-news-card-img.jpg" alt="" class="news-card__img">
+              </a>
             </div>
-            <!--one-news__preveiw-->
 
-            <!--one-news__desc-->
-            <div class="news__desc">
-              <h2 class='news__title'>Неподкупность государственных СМИ стала доступной ширнармассам</h2>
+            <div class="news-card__info">
 
-              <p class="news__text">
+              <p class="news-card__desc">
                 Как уже неоднократно упомянуто, действия представителей оппозиции являются только методом политического
                 участия и заблокированы в рамках своих собственных рациональных ограничений. Но укрепление и развитие
                 внутренней структуры влечет за собой процесс внедрения и модернизации направлений прогрессивного
@@ -201,12 +168,13 @@
                 собой интересный эксперимент проверки поэтапного и последовательного развития общества. Банальные, но
                 неопровержимые выводы, а также сделанные на базе интернет-аналитики выводы описаны максимально подробно.
               </p>
+
             </div>
-            <!--one-news__desc-->
-
           </div>
-          <!--one-news-->
-
+          <!--news-card -->
+          <div class="news__btn">
+            <a href="news.html" class="news__link white-btn">Вернуться к новостям</a>
+          </div>
         </section>
         <!--news-->
 
@@ -250,12 +218,6 @@
           <nav class="f-nav">
 
             <ul class="f-nav__list">
-
-              <li class="f-nav__item">
-                <a href="index.html" class="f-nav__link link">
-                  Главная
-                </a>
-              </li>
 
               <li class="f-nav__item">
                 <a href="catalog.html" class="f-nav__link link">
@@ -383,25 +345,6 @@
         <!--f-info__inner-->
       </div>
       <!--f-info-->
-
-      <!--f-bootom-->
-      <div class="f-bootom">
-        <!--f-bootom__inner-->
-        <div class="f-bootom__inner container">
-          <!--made-->
-          <div class="made">
-            <span class="made__text">Сайт создан на</span>
-            <a href="#!" class="made__link">
-              <img src="./img/icon/vassortimente-logo.svg" alt="" class="made__logo">
-            </a>
-            <span class="made__text">Пакет: Business </span>
-          </div>
-          <!--made-->
-        </div>
-        <!--f-bootom__inner-->
-      </div>
-      <!--f-bootom-->
-
     </footer>
 
     <!--mobile-menu-->
@@ -470,447 +413,64 @@
       </div>
     </div>
     <!--up-->
-    <!-- modal windows -->
-    <div id='modalsWrap' class="modals-wrap">
-      <div class="bg-modals">
-        <!-- connection windows-->
-
-        <!-- feetback -->
-        <div id='feetback' class="connection-modal modal js-modal">
-          <!--connection-modal__content-->
-          <div class="connection-modal__content">
-            <div class="modal__text">
-              <h4 class="modal__title">
-                Обратный звонок
-              </h4>
-              <p class="modal__desc">
-                Оставьте свои контактные данные
-                и наш менеджер свяжется с вами в течении часа
-              </p>
-            </div>
-
-            <form id='feetbackForm' action="testAjax/test-simple-form.json" method="POST" class='modal-form'>
-              <!--modal__inputs-->
-              <div class="modal__inputs inputs-block">
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Имя
-                  </label>
-                  <input type="text" class="input js-input js-input-name" name='name' placeholder="Константин">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Телефон
-                  </label>
-                  <input type="text" class="input js-input js-input-phone" name='phone' placeholder="+7 922 888 88 88">
-                </div>
-                <!--input-with-name-->
-
-                <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
-
-                <!--input-check-->
-                <div class="input-check js-checkbox">
-                  <label class="input-check__label">
-                    <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
-                    <span class="input-check__fake">
-
-                    </span>
-                    <span class="input-check__text">
-                      Даю согласие на обработку моих персональных данных
-                    </span>
-
-                  </label>
-                </div>
-                <!--input-check-->
-              </div>
-              <!--modal__inputs-->
-
-
-              <!--modal-form__error-->
-              <div class='form-error'>
-                <p class="form-error__message js-message">
-                  Ошибка отправки
-                </p>
-              </div>
-              <!--modal-form__error-->
-
-            </form>
-
-            <div class="modal__close">
-              <span class="btn js-close-modal">
-                <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
-              </span>
-            </div>
-
-            <div class="modal__bg connection-modal__bg">
-              <img src="./img/image/manager2.jpg" alt="" class="modal__img connection-modal__img">
-            </div>
-          </div>
-          <!--connection-modal__content-->
-        </div>
-        <!-- feetback -->
-
-        <!-- help -->
-        <div id='help' class="connection-modal modal js-modal">
-          <!--connection-modal__content-->
-          <div class="connection-modal__content">
-            <div class="modal__text">
-              <h4 class="modal__title">
-                Служба поддержки
-              </h4>
-              <p class="modal__desc">
-                Здесь вы можете оставить нам сообщение, касающееся работы сайта, чтобы мы могли стать еще удобнее и
-                функциональнее для Вас
-              </p>
-            </div>
-
-            <form id='helpForm' enctype="multipart/form-data" action="testAjax/test-simple-form.json" method="POST"
-              class='modal-form'>
-              <!--modal__inputs-->
-              <div class="modal__inputs inputs-block">
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Почта
-                  </label>
-                  <input type="text" class="input js-input-email js-input" name='email'
-                    placeholder="Kostya228@gmail.com">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Сообщение
-                  </label>
-                  <textarea class="input textarea js-input-textarea js-input" name='message'
-                    placeholder="Мне нужно быстро доставить"></textarea>
-                </div>
-                <!--input-with-name-->
-
-                <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
-
-                <!--input-check-->
-                <div class="input-check js-checkbox">
-                  <label class="input-check__label">
-                    <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent'>
-                    <span class="input-check__fake">
-
-                    </span>
-                    <span class="input-check__text">
-                      Даю согласие на обработку моих персональных данных
-                    </span>
-
-                  </label>
-                </div>
-                <!--input-check-->
-
-              </div>
-              <!--modal__inputs-->
-
-              <!--modal-form__error-->
-              <div class='form-error'>
-                <p class="form-error__message js-message">
-                  Ошибка отправки
-                </p>
-              </div>
-              <!--modal-form__error-->
-            </form>
-            <div class="modal__close ">
-              <span class="btn js-close-modal">
-                <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
-              </span>
-            </div>
-
-            <div class="modal__bg connection-modal__bg">
-              <img src="./img/image/earth-img.jpg" alt="" class="modal__img connection-modal__img">
-            </div>
-          </div>
-          <!--connection-modal__content-->
-
-        </div>
-        <!-- help -->
-
-        <!-- connection-thanks -->
-        <div id='connectionThanks' class="connection-thanks modal js-modal">
-          <div class="connection-thanks__content">
-            <div class="modal-thanks__text">
-              <h4 class="modal__title">
-                Спасибо за вашу заявку
-              </h4>
-              <p class="modal__desc">
-                Скоро мы свяжемся с вами!
-              </p>
-
-              <a href="index.html" class="modal__link blue-btn">На главную</a>
-            </div>
-          </div>
-
-          <div class="modal__close">
-            <span class="btn js-close-modal">
-              <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+    <!--mobile-menu-->
+    <nav id='mobileMenu' class="mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="index.html" class="mobile-menu__link">
+            <span class="mobile-menu__text">Главная</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="catalog.html" class="mobile-menu__link">
+            <span class="mobile-menu__text">Каталог</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="about.html" class="mobile-menu__link">
+            <span class="mobile-menu__text">О Компании</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="branches.html" class="mobile-menu__link">
+            <span class="mobile-menu__text">Филиалы</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="news.html" class="mobile-menu__link">
+            <span class="mobile-menu__text">Новости</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#!" class="mobile-menu__link">
+            <span class="mobile-menu__text">Оферта</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="favorites.html" class="mobile-menu__link">
+            <span class="mobile-menu__text">Избранное</span>
+            <span class="mobile-menu__quantity">
+              <span id='favoriteCount' class="mobile-menu__num">122</span>
             </span>
-          </div>
-
-          <div class="modal__bg modal-thanks__bg connection-modal__bg">
-            <img src="./img/image/armature-big.jpg" alt="" class="modal__img connection-modal__img">
-          </div>
-        </div>
-        <!-- connection-thanks -->
-        <!-- connection windows-->
-
-        <!-- order windows-->
-
-        <!--fast order-->
-        <div id='fastOrder' class="order-modal modal js-modal">
-          <form id='fastOrderForm' action="testAjax/test-simple-form.json" method="POST">
-            <div class="order-modal__content">
-              <!--order-modal__left-->
-              <div class="order-modal__left">
-                <div class="modal__text">
-                  <h4 class="modal__title">
-                    Быстрый заказ
-                  </h4>
-                  <p class="modal__desc">
-                    Оставьте свои контактные данные
-                  </p>
-                </div>
-                <!--order-inputs-->
-                <div class='order-inputs'>
-                  <!--modal__inputs-->
-                  <div class="modal__inputs inputs-block">
-
-
-                    <!--input-with-name-->
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Телефон
-                      </label>
-                      <input type="text" class="input js-input-phone js-input" name='phone'
-                        placeholder="+7 922 888 88 88">
-                    </div>
-                    <!--input-with-name-->
-
-                    <!--input-with-name-->
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Почта
-                      </label>
-                      <input type="text" class="input js-input-email js-input" name='email'
-                        placeholder="Kostya228@gmail.com">
-                    </div>
-                    <!--input-with-name-->
-
-                    <!--input-with-name-->
-                    <div class="input-with-name">
-                      <label class="input-label">
-                        Сообщение
-                      </label>
-                      <textarea class="input textarea order__textarea js-input-textarea js-input" name='message'
-                        placeholder="Мне нужно быстро доставить"></textarea>
-                    </div>
-                    <!--input-with-name-->
-
-                    <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
-
-                    <!--input-check-->
-                    <div class="input-check js-checkbox">
-                      <label class="input-check__label">
-                        <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
-                        <span class="input-check__fake">
-
-                        </span>
-                        <span class="input-check__text">
-                          Даю согласие на обработку моих персональных данных
-                        </span>
-
-                      </label>
-                    </div>
-                    <!--input-check-->
-
-                  </div>
-                  <!--modal__inputs-->
-
-                  <!--modal-form__error-->
-                  <div class='form-error'>
-                    <p class="form-error__message js-message">
-                      Ошибка отправки
-                    </p>
-                  </div>
-                  <!--modal-form__error-->
-                </div>
-                <!--order-inputs-->
-                <div class="order-modal__bg">
-                  <img src="./img/image/armature-order.jpg" alt="" class="modal__img order-modal__img">
-                </div>
-              </div>
-              <!--order-modal__left-->
-
-              <!--order-modal__right-->
-              <div class="order-modal__right">
-                <h4 class="modal__title">
-                  Информация о заказе
-                </h4>
-
-                <!--order-modal__list-->
-                <ul class="order-modal__list scroll-bar js-list-wrap">
-                  <li class="order-modal__item">
-
-                  </li>
-                </ul>
-                <!--order-modal__list-->
-
-                <div class="order-modal__total">
-                  <span class="order-modal__text">Итого:</span>
-                  <span id='fastOrderTotalPrice' class="order-modal__price js-total-price">8900 ₽</span>
-                </div>
-              </div>
-              <!--order-modal__right-->
-
-            </div>
-          </form>
-          <div class="modal__close">
-            <span id='closeFastOrderBtn' class="btn js-close-modal .js-clean-product">
-              <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="basket.html" class="mobile-menu__link">
+            <span class="mobile-menu__text">Корзина</span>
+            <span class="mobile-menu__quantity">
+              <span id='basketCount' class="mobile-menu__num ">122</span>
             </span>
-          </div>
-        </div>
-        <!--fast order-->
+          </a>
+        </li>
+      </ul>
 
-        <!--order-->
-        <div id='order' class="connection-modal modal js-modal">
-          <!--connection-modal__content-->
-          <div class="connection-modal__content">
-            <div class="modal__text">
-              <h4 class="modal__title">
-                Заказ на сумму: <span id='orderTotalePrice' class="order
-                -total-price js-total-price">900000000000 p</span>
-              </h4>
-              <p class="modal__desc">
-                Оставьте свои контактные данные
-                и наш менеджер свяжется с вами в течении часа
-              </p>
-            </div>
-
-            <form id='orderForm' action="testAjax/order-test.json" method="POST" class='modal-form'>
-              <!--modal__inputs-->
-              <div class="modal__inputs inputs-block">
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Имя
-                  </label>
-                  <input type="text" class="input js-input-name js-input" name='name' placeholder="Константин">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Телефон
-                  </label>
-                  <input type="text" class="input js-input-phone js-input" name='phone' placeholder="+7 922 888 88 88">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Почта
-                  </label>
-                  <input type="text" class="input js-input-email js-input" name='email'
-                    placeholder="Kostya228@gmail.com">
-                </div>
-                <!--input-with-name-->
-
-                <!--input-with-name-->
-                <div class="input-with-name">
-                  <label class="input-label">
-                    Сообщение
-                  </label>
-                  <textarea class="input textarea js-input-textarea js-input" name='message'
-                    placeholder="Мне нужно быстро доставить"></textarea>
-                </div>
-                <!--input-with-name-->
-
-                <button class='input-submit js-submit blue-btn' type='submit'>Отправить</button>
-
-                <!--input-check-->
-                <div class="input-check js-checkbox">
-                  <label class="input-check__label">
-                    <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
-                    <span class="input-check__fake">
-
-                    </span>
-                    <span class="input-check__text">
-                      Даю согласие на обработку моих персональных данных
-                    </span>
-
-                  </label>
-                </div>
-                <!--input-check-->
-
-              </div>
-              <!--modal__inputs-->
-
-
-              <!--modal-form__error-->
-              <div class='form-error'>
-                <p class="form-error__message js-message">
-                  Ошибка отправки
-                </p>
-              </div>
-              <!--modal-form__error-->
-
-            </form>
-
-            <div class="modal__close">
-              <span class="btn js-close-modal">
-                <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
-              </span>
-            </div>
-
-            <div class="modal__bg connection-modal__bg">
-              <img src="./img/image/armature-big.jpg" alt="" class="modal__img connection-modal__img">
-            </div>
-          </div>
-          <!--connection-modal__content-->
-        </div>
-        <!--order-->
-        <!-- order windows-->
-        <!--order-thanks-->
-        <div id='orderThanks' class="connection-thanks modal js-modal">
-          <div class="order-thanks__content">
-            <div class="modal-thanks__text">
-              <h4 class="modal__title">
-                Спасибо за ваш заказ
-              </h4>
-              <p class="modal__desc">
-                Скоро мы свяжемся с вами!
-              </p>
-              <a href="index.html" class="modal__link blue-btn">На главную</a>
-            </div>
-          </div>
-          <div class="modal__close">
-            <span class="btn js-close-modal">
-              <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
-            </span>
-          </div>
-          <div class="modal__bg modal-thanks__bg order-thanks__bg">
-            <img src="./img/image/armature-order.jpg" alt="" class="modal__img connection-modal__img">
-          </div>
-        </div>
-        <!--order-thanks-->
-      </div>
-    </div>
-    <!-- modal windows -->
+      <span class="mobile-menu__close">
+        <span id="mobileMenuClose" class="btn">
+          <img src="./img/controls/mobile-menu-close.svg" alt="" class="btn__icon">
+        </span>
+      </span>
+    </nav>
+    <!--mobile-menu-->
   </div>
   <script src='./js/main.js'></script>
 </body>

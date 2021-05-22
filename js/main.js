@@ -2114,26 +2114,38 @@ function renderNews(newsArr) {
   news.classList.remove('js-loading');
   news.querySelector('.spinner').remove();
   function getMarkupEl(obj) {
-    const { title, img, link } = obj;
-    return (`
+    const { title, desc, img, link } = obj;
+
+    return (/*html */`
     <div class="news-card">
-              <div class="news-card__preview">
-                <a href="${link}" class="news-card__preview-link">
-                  <img src="${img}" alt="" class="news-card__img">
-                </a>
-              </div>
-              <div class="news-card__desc">
-                <h2 class="news-card__title"><a href="${link}" class="news-card_link">${title}
-                  </a>
-                </h2>
-              </div>
-            </div>
-    `)
+      <div class="news-card__preview">
+        <a href="${link}" class="news-card__preview-link">
+          <img src="./img/image/slider-news-card-img.jpg" alt="" class="news-card__img">
+        </a>
+      </div>
+
+      <div class="news-card__info">
+        <h3 class='news-card__title'>
+          <a href="${link}" class="news-card__title-link link">
+          ${title}
+          </a>
+        </h3>
+
+        <p class="news-card__desc">
+        ${desc}
+        </p>
+        <div class="news-card__btn">
+          <a href="${link}" class="news-card__link white-btn">Подробнее</a>
+        </div>
+
+      </div>
+    </div>
+    `);
   }
 }
 
 function getMarkupSpinner() {
-  return (`
+  return (/*html*/`
   <div class="spinner">
     <div class="loadingio-spinner-dual-ring-3inkns7bjnw">
       <div class="ldio-2ikg7lk3b38">
