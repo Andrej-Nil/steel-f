@@ -17,7 +17,7 @@
     margin-right: 0;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -31,4 +31,14 @@
       background: $l-blue;
     }
   }
+}
+
+.catalog-tabs__item--is-active {
+  &::before {
+    background: $l-blue;
+  }
+}
+
+.products--is-hide {
+  display: none;
 }

@@ -3179,7 +3179,7 @@ ul {
 }
 
 .catalog-tabs__item::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -3191,6 +3191,14 @@ ul {
 
 .catalog-tabs__item:hover::before {
   background: #7dc8ed;
+}
+
+.catalog-tabs__item--is-active::before {
+  background: #7dc8ed;
+}
+
+.products--is-hide {
+  display: none;
 }
 
 .catalog-list {

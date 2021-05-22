@@ -79,11 +79,42 @@ let moveStart = null;
 let moveEnd = null;
 
 if (catalogTabs) {
-  toggleCatalogTabs()
+  catalogTabs.addEventListener('click', toggleCatalogTabs)
 }
+function toggleCatalogTabs(e) {
+  const tab = e.target.closest('[data-tab]')
+  if (!tab) {
+    return;
+  }
+  const tabs = catalogTabs.querySelectorAll('[data-tab]')
+  const contentTabs = document.querySelectorAll('[data-contentTab]');
+  const dataId = tab.dataset.id;
 
-function toggleCatalogTabs() {
-  console.log(catalogTabs)
+  contentTabs.forEach((content) => {
+    const id = content.getAttribute('id');
+    if (dataId === 'all') {
+      content.classList.remove('products--is-hide');
+      return;
+    }
+    if (dataId === id) {
+      content.classList.remove('products--is-hide');
+      return;
+    }
+    content.classList.add('products--is-hide');
+
+  })
+
+  tabs.forEach((tab) => {
+    if (dataId === tab.dataset.id) {
+      tab.classList.add('catalog-tabs__item--is-active');
+      return;
+    }
+    tab.classList.remove('catalog-tabs__item--is-active');
+
+  })
+
+
+
 }
 
 if (loginForm) {
@@ -139,15 +170,7 @@ if (elementLinks.length) {
 if (map) {
   ymaps.ready(initMap);
 }
-if (switchToggles.length) {
 
-  Array.from(switchToggles).forEach((toggle) => {
-    toggle.addEventListener('click', () => {
-      toggleSwitch(toggle);
-    });
-  })
-  //switchToggle.addEventListener('click', toggleSwitch);
-}
 //карусели
 if (mainSlider) {
   slider(mainSlider, true);
@@ -215,14 +238,8 @@ window.addEventListener('scroll', function () {
     loadingNews()
   }
 
-  if (switchFixed) {
-    showSwitchFixed()
-  }
 });
 
-if (switchFixed) {
-  clickToggleToUp()
-}
 
 function clickToggleToUp() {
   const toggle = switchFixed.querySelector('[data-switch]');

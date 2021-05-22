@@ -141,22 +141,22 @@
       <!-- left -->
       <div class="left">
 
-        <div id="#catalogTabs" class="catalog-tabs">
-          <div data-id='all' class="catalog-tabs__item">
+        <div id="catalogTabs" class="catalog-tabs">
+          <div data-id='all' data-tab class="catalog-tabs__item catalog-tabs__item--is-active">
             Все
           </div>
 
-          <div data-id='products' class="catalog-tabs__item">
+          <div data-id='products' data-tab class="catalog-tabs__item">
             Продукция
           </div>
 
-          <div data-id='services' class="catalog-tabs__item">
+          <div data-id='services' data-tab class="catalog-tabs__item">
             Услуги
           </div>
         </div>
 
         <!-- Продукция -->
-        <section id='products' class="section mb80">
+        <section data-contentTab id='products' class="section mb80">
           <h2 class="section-title">
             Продукция
           </h2>
@@ -257,7 +257,7 @@
         <!-- Продукция -->
 
         <!-- Услуги -->
-        <section id='services' class="section mb80">
+        <section data-contentTab id='services' class="section mb80">
           <h2 class="section-title">
             Услуги
           </h2>
