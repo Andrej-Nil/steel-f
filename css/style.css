@@ -4822,29 +4822,12 @@ ul {
 
 .branches {
   overflow: hidden;
-  background: #ffffff;
-  border-radius: 20px;
-}
-
-.branches__img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 1090px) {
-  .branches__img {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .branches__img {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 120px;
 }
 
 .branches__cols {
+  background: #ffffff;
+  border-radius: 5px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4857,13 +4840,14 @@ ul {
 
 @media (min-width: 1090px) {
   .branches__cols {
-    padding: 0 30px 50px;
+    padding: 30px;
   }
 }
 
 .branches__item {
-  font-size: 18px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 200%;
 }
 
 @media (min-width: 450px) {
@@ -4880,7 +4864,7 @@ ul {
 
 @media (min-width: 1090px) {
   .branches__item {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
