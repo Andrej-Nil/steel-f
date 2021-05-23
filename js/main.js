@@ -42,6 +42,7 @@ const popularGoods = document.querySelector('#popularGoods');
 const sectionSlider = document.querySelector('#sectionSlider');
 const newsSlider = document.querySelector('#newsSlider');
 const productSlider = document.querySelector('#productSlider');
+const aboutSlider = document.querySelector('#aboutSlider')
 
 //btns
 const favoriteBtns = document.querySelectorAll('.js-favorite');
@@ -190,6 +191,10 @@ if (sectionSlider) {
 }
 if (productCarusel) {
   carusel(productCarusel);
+}
+
+if (aboutSlider) {
+  slider(aboutSlider, true);
 }
 
 // Forms
@@ -559,8 +564,6 @@ function slider(el, autoplay = false) {
   }
 
   // функции управление точками
-
-
   //прочие функции
   function intervalSwitch(autoplay, toggle = false, timeInterval = 8000) {
     if (!autoplay) {

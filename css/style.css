@@ -414,42 +414,21 @@ ul {
 .dot {
   position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0);
-  margin-right: 12px;
-  cursor: pointer;
+  margin-right: 20px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  background: #cccccc;
 }
 
 .dot:last-child {
   margin-right: 0;
 }
 
-.dot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #cccccc;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
 .dot--is-active {
-  border: 1px solid #566173;
-}
-
-.dot--is-active::before {
-  background: #566173;
+  background: #071a36;
 }
 
 .input {
@@ -4200,20 +4179,22 @@ ul {
 }
 
 .about {
-  padding: 16px 18px 25px;
+  padding: 25px;
   background: #ffffff;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 1090px) {
   .about {
-    padding: 39px 30px 25px;
+    padding: 25px;
   }
 }
 
 .about__desc {
   margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 .about__desc:last-child {
@@ -4222,69 +4203,14 @@ ul {
 
 @media (min-width: 1090px) {
   .about__desc {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 
-.about__title {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 130%;
-  margin-bottom: 25px;
-}
-
-@media (min-width: 1090px) {
-  .about__title {
-    font-size: 24px;
-    line-height: 110%;
-    margin-bottom: 30px;
-  }
-}
-
-.about__text {
-  font-size: 14px;
-  line-height: 110%;
-}
-
-@media (min-width: 1090px) {
-  .about__text {
-    font-size: 18px;
-  }
-}
-
-.about__list {
-  margin-bottom: 23px;
-}
-
-@media (min-width: 1090px) {
-  .about__list {
-    margin-bottom: 30px;
-  }
-}
-
-.about__item {
-  font-size: 14px;
-  line-height: 110%;
-}
-
-@media (min-width: 1090px) {
-  .about__item {
-    font-size: 18px;
-  }
-}
-
-.about__para {
-  margin-bottom: 20px;
-}
-
-.about__para:last-child {
-  margin-bottom: 0;
-}
-
-@media (min-width: 1090px) {
-  .about__para {
-    margin-bottom: 30px;
-  }
+.about__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .news-card {
