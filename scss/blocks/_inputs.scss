@@ -6,7 +6,7 @@
   outline: none;
   width: 100%;
   margin-bottom: 20px;
-  font-family: "Futura", sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
@@ -34,28 +34,28 @@
   }
 }
 .input::-webkit-input-placeholder {
-  font-family: "Futura", sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   color: $grey;
 }
 .input::-moz-placeholder {
-  font-family: "Futura", sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   color: $grey;
 }
 .input:-ms-input-placeholder {
-  font-family: "Futura", sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   color: $grey;
 }
 .input:-moz-placeholder {
-  font-family: "Futura", sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
@@ -93,7 +93,7 @@
 .input-submit {
   display: block;
   width: 100%;
-  font-family: "Futura", sans-serif;
+  font-family: 'Futura', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
@@ -117,7 +117,7 @@
   background-color: $blue;
   border-radius: 50%;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,7 +136,7 @@
   font-size: 14px;
   line-height: 100%;
   padding-left: 27px;
-  color: $d-grey;
+  color: $d-blue;
 }
 
 .input-check__link {

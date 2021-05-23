@@ -5,6 +5,7 @@
 .pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
   @media (min-width: 1090px) {
     justify-content: flex-start;
   }
@@ -13,7 +14,6 @@
 .pagination__list {
   display: flex;
   align-items: center;
-  background: $white;
   padding: 5px;
   border-radius: 50px;
   @media (min-width: 500px) {
@@ -40,19 +40,20 @@
   border-radius: 50%;
   transition: 0.2s ease-in-out;
 
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: $d-grey;
+
   @media (min-width: 1090px) {
     width: 40px;
     height: 40px;
     &:hover {
-      background: $l-blue;
-    }
-
-    &:active {
-      background: $d-yellow;
+      background: $white;
     }
   }
 }
 
 .pagination__btn--is-active {
-  background: $blue;
+  background: $white;
 }

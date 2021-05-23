@@ -1,11 +1,11 @@
 .sorting {
   position: relative;
-  width: 200px;
+  width: 220px;
   z-index: 1000;
-  background: $pearl;
+  background: $white;
 
   @media (min-width: 600px) {
-    width: 250px;
+    width: 220px;
   }
   @media (min-width: 1090px) {
   }
@@ -13,9 +13,10 @@
 
 .sorting__head {
   position: relative;
-  border: 1px solid $d-grey;
+  border: 2px solid $grey;
+
   box-sizing: border-box;
-  border-radius: 50px;
+  border-radius: $bdr5;
   padding: 15px 20px;
   cursor: pointer;
   z-index: 1000;
@@ -67,7 +68,7 @@
   border-top: none;
   box-sizing: border-box;
   border-radius: 0 0 5px 5px;
-  background: $pearl;
+  background: $white;
 }
 
 .sorting___link {

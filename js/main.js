@@ -1717,11 +1717,11 @@ function rollUpFiltersbtn() {
   const filtersHeight = filters.offsetHeight;
   filtersWrap.style.height = filtersHeight + 'px';
   setTimeout(() => {
-    filtersWrap.style.height = '60px';
+    filtersWrap.style.height = '50px';
     rollUpBtn.classList.remove('filters__roll-up--is-show');
   }, 20);
   setTimeout(() => {
-    filtersWrap.style.width = '190px';
+    filtersWrap.style.width = '220px';
     filtersWrap.classList.add('js-filters-close');
   }, 220);
 
