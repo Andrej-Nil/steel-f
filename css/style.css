@@ -2107,7 +2107,7 @@ ul {
 
 @media (min-width: 350px) {
   .section-link {
-    max-width: 240px;
+    width: 240px;
   }
 }
 
@@ -2144,13 +2144,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
   right: 15px;
-  top: 10px;
+  top: 15px;
   z-index: 100;
 }
 
 @media (min-width: 1090px) {
   .section-slider__controls {
-    top: 7px;
+    top: 20px;
   }
 }
 
@@ -2161,6 +2161,12 @@ ul {
 
 .section-slider__arrow:last-child {
   margin-right: 0;
+}
+
+.section-slider__link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .product-slider {
@@ -2791,17 +2797,29 @@ ul {
 .rolled-card {
   position: relative;
   overflow: hidden;
-  max-width: 380px;
   width: 100%;
-  height: 200px;
+  height: 80px;
   background: #ffffff;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
   .rolled-card {
+    height: 100px;
     width: 49%;
+  }
+}
+
+@media (min-width: 800px) {
+  .rolled-card {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rolled-card {
+    max-width: 380px;
   }
 }
 
@@ -2847,7 +2865,7 @@ ul {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 800px) {
   .rolled-card__title {
     font-weight: 600;
     font-size: 24px;
@@ -2875,11 +2893,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  max-height: 280px;
-  height: 130%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  width: auto;
+  width: 100%;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
