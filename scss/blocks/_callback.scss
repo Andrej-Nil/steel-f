@@ -2,15 +2,18 @@
   border-radius: $bdr5;
   overflow: hidden;
   background: $white;
-  padding: 40px;
+  padding: 20px;
+  @media (min-width: 850px) {
+    padding: 40px;
+  }
 }
 
 .callback-form__title {
   font-weight: 600;
-  font-size: 44px;
-  line-height: 95.2%;
+  font-size: 24px;
+  line-height: 100%;
 
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   @media (min-width: 850px) {
     font-size: 24px;
@@ -26,8 +29,8 @@
   color: $d-grey;
   line-height: 130%;
   margin-bottom: 20px;
+  font-size: 14px;
   @media (min-width: 850px) {
-    font-size: 16px;
   }
 
   @media (min-width: 1280px) {
@@ -57,5 +60,64 @@
 }
 
 .callback__input {
-  max-width: 340px;
+  //max-width: 340px;
+  width: 100%;
+  @media (min-width: 700px) {
+    max-width: 49%;
+  }
+}
+
+.callback__send {
+  width: 100%;
+  max-width: 100%;
+  @media (min-width: 700px) {
+    max-width: 49%;
+  }
+}
+
+.input-upload {
+  width: 100%;
+  max-width: 100%;
+  @media (min-width: 700px) {
+    max-width: 49%;
+  }
+}
+
+.callback__input-upload {
+  display: none;
+}
+
+.input-upload__btn,
+.input-upload__text {
+  display: none;
+
+  @media (min-width: 700px) {
+    display: block;
+  }
+}
+
+.input-upload__btn {
+  padding: 9px 20px;
+}
+
+.input-upload__mobile-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+.input-upload__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.input-upload__mobile-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: $blue;
 }

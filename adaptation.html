@@ -737,7 +737,97 @@
           <!--section-slides-->
         </div>
         <!--section-slider Прокат-->
+
+        <!--Обратная связь -->
+        <section class="section">
+          <!-- section__content -->
+          <div class="section__content">
+            <!-- callback -->
+            <div class="callback">
+              <!-- callback-form -->
+              <!-- callback-form__top -->
+              <h4 class='callback-form__title'>
+                Получите точный расчет
+              </h4>
+              <p class="callback-form__desc">
+                Загрузите спецификацию, наш менеджер рассчитает стоимость заказа
+              </p>
+              <!-- callback-form__top -->
+              <!--callback-form__content-->
+              <div class="callback-form__content">
+                <form id='callbackForm' enctype="multipart/form-data" action="testAjax/test-simple-form.json"
+                  method="POST" class='callback-form'>
+                  <div class='form-error'>
+                    <p class="form-error__message js-message">
+                      Ошибка отправки
+                    </p>
+                  </div>
+                  <!--callback__inputs-->
+                  <div class="callback__inputs inputs-block">
+                    <input type="text" class="callback__input input js-input js-name-input" name='name'
+                      placeholder="Имя">
+
+                    <input type="text" class="callback__input input js-input-phone js-input" name='phone'
+                      placeholder="+7 922 888 88 88">
+
+                    <input type="text" class="callback__input input js-input js-mail-input" name='email'
+                      placeholder="E-mail">
+
+                    <input type="text" class=" callback__input input js-text-input" name='message'
+                      placeholder="Коментарий">
+
+                    <div class="input-upload callback__input">
+                      <label class="input-upload__label">
+                        <div class="input-upload__mobile-btn">
+                          <img src="./img/icon/paper-clip-icon.svg" alt="" class="input-upload__icon">
+                          <span class="input-upload__mobile-text">Прикрепить файл</span>
+                        </div>
+
+                        <div class='input-upload__btn white-btn'>Прикрепить спецификацию</div>
+                        <input type="file" name='files' class="input-upload__file js-input js-file-input">
+                        <p class='input-upload__text'>
+                          <span class="input-upload__text-title">Добавлен
+                            файл: </span>
+                          <span class='js-file-name'>загрузить</span>
+                        </p>
+                      </label>
+                    </div>
+
+
+                    <div class="form__send callback__send">
+                      <button class='input-submit callback__input-submit blue-btn js-submit' type='submit'>Отправить
+                        заявку</button>
+
+                      <div class="input-check js-checkbox">
+                        <label class="input-check__label">
+                          <input type="checkbox" class='input-check__checkbox js-checkbox-input' name='consent' checked>
+                          <span class="input-check__fake">
+
+                          </span>
+                          <span class="input-check__text">
+                            Я прочитал и согласен с
+                            <a href="#!" class='input-check__link'>правилами обработки персональных данных</a>
+                          </span>
+
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--callback__inputs-->
+                </form>
+              </div>
+              <!--callback-form__content-->
+            </div>
+            <!-- callback -->
+          </div>
+          <!-- section__content -->
+
+
+        </section>
+        <!--Обратная связь -->
       </div>
+
+
 
 
       <!-- left -->
