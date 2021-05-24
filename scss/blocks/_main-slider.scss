@@ -1,7 +1,11 @@
 .main-slider {
   margin-bottom: 120px;
-  border-radius: $bdr5;
+
   overflow: hidden;
+
+  @media (min-width: 1280px) {
+    border-radius: $bdr5;
+  }
 }
 
 .main-slide__link {
@@ -28,11 +32,15 @@
   }
 }
 
+.main-slide__img {
+  width: 100%;
+}
+
 .main-slider__control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
+  display: none;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -42,7 +50,7 @@
   &:hover {
     opacity: 1;
   }
-  @media (min-width: 1090px) {
+  @media (min-width: 500px) {
     display: block;
   }
 }

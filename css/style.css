@@ -1512,8 +1512,13 @@ ul {
 
 .main-slider {
   margin-bottom: 120px;
-  border-radius: 5px;
   overflow: hidden;
+}
+
+@media (min-width: 1280px) {
+  .main-slider {
+    border-radius: 5px;
+  }
 }
 
 .main-slide__link {
@@ -1549,11 +1554,16 @@ ul {
   }
 }
 
+.main-slide__img {
+  width: 100%;
+}
+
 .main-slider__control {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  display: none;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -1570,7 +1580,7 @@ ul {
   opacity: 1;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 500px) {
   .main-slider__control {
     display: block;
   }
