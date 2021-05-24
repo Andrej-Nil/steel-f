@@ -36,10 +36,11 @@
 
 .section-controls {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   @media (min-width: 500px) {
+    justify-content: center;
     margin-top: 60px;
   }
 }
@@ -54,7 +55,7 @@
 
 .section-arrow {
   position: relative;
-  display: none;
+  //display: none;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -66,8 +67,7 @@
 }
 
 .section-link {
-  width: 100%;
-  //max-width: 290px;
+  width: 200px;
   @media (min-width: 350px) {
     max-width: 240px;
   }
@@ -82,8 +82,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 17px;
-  height: 30px;
+  width: 13px;
+  height: auto;
 }
 
 .section-slider {
