@@ -18,7 +18,7 @@
 
   font-size: 14px;
 
-  @media (min-width: 900px) {
+  @media (min-width: 1040px) {
     flex-direction: row;
   }
   @media (min-width: 1280px) {
@@ -37,19 +37,21 @@
   margin-right: 111px;
   text-decoration: underline;
   order: 1;
-  @media (min-width: 900px) {
+  @media (min-width: 1040px) {
     order: 0;
   }
 }
 
 .f-contacts__address {
   margin: 0 0 30px 0;
-  min-width: 370px;
   color: $d-grey;
   font-size: 18px;
   line-height: 130%;
-  @media (min-width: 900px) {
+  @media (min-width: 400px) {
+    width: 331px;
     margin: 0 30px 0 0;
+  }
+  @media (min-width: 1040px) {
     width: 331px;
   }
 

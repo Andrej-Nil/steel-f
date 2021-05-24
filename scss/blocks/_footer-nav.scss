@@ -1,6 +1,7 @@
 .f-top {
   background: $milky;
   padding: $flank;
+
   @media (min-width: 1575px) {
     padding: 0;
   }
@@ -9,7 +10,14 @@
 .f-top__inner {
   min-height: 80px;
   display: flex;
-  align-items: center;
+  padding-top: 30px;
+  flex-direction: column;
+  @media (min-width: 1040px) {
+    padding: 0;
+    align-items: center;
+    flex-direction: row;
+    min-height: 135px;
+  }
   @media (min-width: 1280px) {
     min-height: 135px;
   }
@@ -18,15 +26,25 @@
 .f-logo {
   height: 55px;
   margin-right: auto;
+  margin-bottom: 33px;
+  @media (min-width: 1040px) {
+    margin-bottom: 0;
+  }
   @media (min-width: 1280px) {
     height: 78px;
   }
 }
 
 .f-nav__list {
-  display: none;
-  @media (min-width: 480px) {
+  //display: flex;
+  //flex-wrap: wrap;
+  columns: 2;
+  @media (min-width: 500px) {
+    columns: 3;
+  }
+  @media (min-width: 768px) {
     display: flex;
+    columns: auto auto;
   }
 }
 
@@ -34,46 +52,18 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 130%;
-
-  margin-right: 50px;
+  margin: 0 0 36px 0;
   text-transform: uppercase;
-  display: none;
   &:last-child {
     margin-right: 0;
   }
 
-  @media (min-width: 500px) {
-    &:first-child {
-      display: block;
-    }
-    &:nth-child(2) {
-      display: block;
-    }
-
-    &:last-child {
-      display: block;
-    }
+  @media (min-width: 768px) {
+    margin: 0 40px 36px 0;
   }
 
-  @media (min-width: 650px) {
-    &:nth-child(3) {
-      display: block;
-    }
-  }
-
-  @media (min-width: 800px) {
-    &:nth-child(4) {
-      display: block;
-    }
-  }
-
-  @media (min-width: 1000px) {
-    &:nth-child(5) {
-      display: block;
-    }
-    &:nth-child(6) {
-      display: block;
-    }
+  @media (min-width: 1040px) {
+    margin: 0 50px 0 0;
   }
 
   @media (min-width: 1280px) {
