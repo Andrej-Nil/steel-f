@@ -99,6 +99,7 @@
 
 .product-line__btns {
   display: flex;
+  align-items: center;
 }
 
 .product-line__btn {
@@ -116,4 +117,13 @@
 .product-line__favorite {
   overflow: hidden;
   border-radius: 50%;
+}
+
+.product-line__counter {
+  margin-right: 30px;
+}
+
+.product-line__remove {
+  width: 16px;
+  height: 16px;
 }

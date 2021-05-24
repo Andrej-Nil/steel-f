@@ -2,14 +2,12 @@
   width: 8px;
 }
 .scroll-bar::-webkit-scrollbar-track {
-  background-color: $pearl;
   border-radius: 20px;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
-  background-color: $pearl;
+  background-color: $l-grey;
   border-radius: 20px;
-  border: 1px solid $l-grey;
 }
 
 .scroll-bar {
