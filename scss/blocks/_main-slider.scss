@@ -1,9 +1,12 @@
 .main-slider {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 
   overflow: hidden;
-
+  @media (min-width: 1090px) {
+    margin-bottom: 90px;
+  }
   @media (min-width: 1280px) {
+    margin-bottom: 120зx;
     border-radius: $bdr5;
   }
 }

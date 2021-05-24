@@ -16,12 +16,12 @@
 
 .section-title {
   font-weight: 600;
-  font-size: 36px;
-  line-height: 95.2%;
+  font-size: 24px;
+  line-height: 100%;
   color: $d-grey;
 
-  margin-bottom: 60px;
-  @media (min-width: 1280px) {
+  margin-bottom: 30px;
+  @media (min-width: 1090px) {
     font-size: 36px;
     margin-bottom: 60px;
   }

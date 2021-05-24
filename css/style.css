@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Futura";
   src: url("../fonts/futura/FuturaDemiC.eot");
@@ -1511,12 +1512,19 @@ ul {
 }
 
 .main-slider {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
   overflow: hidden;
+}
+
+@media (min-width: 1090px) {
+  .main-slider {
+    margin-bottom: 90px;
+  }
 }
 
 @media (min-width: 1280px) {
   .main-slider {
+    margin-bottom: 120зx;
     border-radius: 5px;
   }
 }
@@ -2025,13 +2033,13 @@ ul {
 
 .section-title {
   font-weight: 600;
-  font-size: 36px;
-  line-height: 95.2%;
+  font-size: 24px;
+  line-height: 100%;
   color: #566173;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1090px) {
   .section-title {
     font-size: 36px;
     margin-bottom: 60px;
@@ -2442,15 +2450,6 @@ ul {
   }
 }
 
-@media (min-width: 1090px) {
-  .subsections {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 @media (min-width: 1500px) {
   .subsections {
     -webkit-box-orient: horizontal;
@@ -2461,18 +2460,19 @@ ul {
 }
 
 .subsection-card {
-  margin: 0 0 20px 0;
-  max-width: 380px;
+  height: 140px;
   width: 100%;
+  margin: 0 0 20px 0;
 }
 
 .subsection-card:last-child {
   margin: 0 0 0 0;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 800px) {
   .subsection-card {
-    margin: 0 0 20px 0;
+    height: 300px;
+    margin: 0 20px 0 0;
   }
   .subsection-card:last-child {
     margin: 0 0 0 0;
@@ -2483,10 +2483,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2495,9 +2491,8 @@ ul {
           justify-content: center;
   overflow: hidden;
   z-index: 1;
-  max-width: 380px;
   width: 100%;
-  height: 300px;
+  height: 100%;
   background: #ffffff;
   border-radius: 5px;
   -webkit-transition: 0.2s ease-in-out;
@@ -2508,23 +2503,31 @@ ul {
   background: #eaeaea;
 }
 
+@media (min-width: 800px) {
+  .subsection-card__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .subsection-card__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
 }
 
-@media (min-width: 1090px) {
-  .subsection-card__title {
-    font-size: 24px;
-  }
-}
-
 .subsection-card__img {
-  width: auto;
   width: 65px;
   height: 65px;
-  margin-bottom: 20px;
+  margin: 0 30px 0 0;
+}
+
+@media (min-width: 800px) {
+  .subsection-card__img {
+    margin: 0 0 20px 0;
+  }
 }
 
 .small-card {
