@@ -436,11 +436,11 @@ function carusel(el,) {
       countDot = caruselDotsSlides.length - 3
     }
 
-    const dotHeight = caruselDotsSlides[0].offsetHeight;
-    const dotMarginBottom = parseInt(getComputedStyle(caruselDotsSlides[0], true).marginBottom);
-    const step = dotHeight + dotMarginBottom;
+    const dotWidth = caruselDotsSlides[0].offsetWidth;
+    const dotMarginRight = parseInt(getComputedStyle(caruselDotsSlides[0], true).marginRight);
+    const step = dotWidth + dotMarginRight;
     const dotsTrackShift = countDot * step;
-    caruselDotsTrack.style.transform = `translate(0, -${dotsTrackShift}px)`;
+    caruselDotsTrack.style.transform = `translate(-${dotsTrackShift}px , 0)`;
   }
   //функция присваивающая активный клас точке
   function setActiveDot(dots, cls) {

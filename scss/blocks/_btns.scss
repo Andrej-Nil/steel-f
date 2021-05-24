@@ -1,7 +1,7 @@
 .blue-btn {
   position: relative;
   display: inline-block;
-  padding: 13px 58px;
+  padding: 13px 40px;
   background: $blue;
   border-radius: $bdr5;
   transition: 0.2s ease-in-out;
@@ -9,7 +9,7 @@
   outline: none;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0);
-
+  font-size: 18px;
   font-weight: 600;
   line-height: 130%;
   text-align: center;
@@ -23,13 +23,13 @@
   }
 
   @media (min-width: 500px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 .white-btn {
   display: inline-block;
-  padding: 5px 20px;
+  padding: 10px 20px;
   width: 150px;
   background: $white;
   border-radius: $bdr5;
@@ -44,7 +44,7 @@
   color: $blue;
 
   @media (min-width: 500px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
