@@ -5259,23 +5259,30 @@ ul {
 
 .modals-wrap {
   position: relative;
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
   width: 100%;
-  height: 100vh;
-  z-index: 1000;
+  z-index: -10000;
   overflow-y: auto;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: background 0.2s ease-in z-index 0 0.2s;
+  transition: background 0.2s ease-in z-index 0 0.2s;
 }
 
 .modals--is-show {
-  display: block;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .bg-modals {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 100%;
   background: rgba(0, 0, 0, 0);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5405,6 +5412,19 @@ ul {
   }
 }
 
+.connection-thanks__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 200px;
+}
+
 @media (min-width: 720px) {
   .connection-thanks__content {
     min-height: 400px;
@@ -5447,9 +5467,15 @@ ul {
 
 .order-modal__left {
   position: relative;
-  padding: 50px;
+  padding: 15px;
   width: 100%;
   background: #ffffff;
+}
+
+@media (min-width: 570px) {
+  .order-modal__left {
+    padding: 50px;
+  }
 }
 
 @media (min-width: 1090px) {
@@ -5476,7 +5502,7 @@ ul {
 
 .order-modal__right {
   background: #f5f5f5;
-  padding: 50px;
+  padding: 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5487,14 +5513,20 @@ ul {
           flex-direction: column;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 570px) {
   .order-modal__right {
     padding: 50px;
   }
 }
 
 .order-modal__right-title {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1090px) {
+  .order-modal__right-title {
+    margin-bottom: 70px;
+  }
 }
 
 .order-modal__total {
@@ -5529,14 +5561,14 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: left;
+  text-align: center;
+  min-height: 200px;
 }
 
 @media (min-width: 720px) {
   .order-thanks__content {
     padding: 50px;
     min-height: 400px;
-    text-align: center;
   }
 }
 
@@ -5569,7 +5601,7 @@ ul {
   overflow: hidden;
   width: 100%;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1090px) {
@@ -5586,6 +5618,7 @@ ul {
 .modal-card__title {
   font-size: 18px;
   line-height: 110%;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1090px) {
@@ -5614,7 +5647,13 @@ ul {
 }
 
 .modal-card__counter {
-  margin-right: 70px;
+  margin-right: 20px;
+}
+
+@media (min-width: 1090px) {
+  .modal-card__counter {
+    margin-right: 70px;
+  }
 }
 
 .modal-card__price {

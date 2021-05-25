@@ -22,6 +22,10 @@
 }
 
 .connection-thanks__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
   @media (min-width: 720px) {
     min-height: 400px;
     display: flex;

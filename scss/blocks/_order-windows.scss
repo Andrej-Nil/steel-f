@@ -12,7 +12,6 @@
   background: $white;
   @media (min-width: 1090px) {
     max-width: 1060px;
-    //min-height: 550px;
     display: flex;
   }
 }
@@ -20,11 +19,14 @@
 .order-modal__left {
   position: relative;
 
-  padding: 50px;
+  padding: 15px;
   width: 100%;
   background: $white;
+  @media (min-width: 570px) {
+    padding: 50px;
+    //max-width: 490px;
+  }
   @media (min-width: 1090px) {
-    //max-width: 440px;
     padding: 50px;
     max-width: 490px;
   }
@@ -44,17 +46,20 @@
 
 .order-modal__right {
   background: $pearl;
-  padding: 50px;
+  padding: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  @media (min-width: 1090px) {
+  @media (min-width: 570px) {
     padding: 50px;
   }
 }
 
 .order-modal__right-title {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+  @media (min-width: 1090px) {
+    margin-bottom: 70px;
+  }
 }
 
 .order-modal__total {
@@ -81,10 +86,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
+  min-height: 200px;
   @media (min-width: 720px) {
     padding: 50px;
     min-height: 400px;
-    text-align: center;
   }
 }

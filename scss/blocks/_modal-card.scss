@@ -21,7 +21,7 @@
   overflow: hidden;
   width: 100%;
   border-radius: $bdr5;
-  margin-right: 10px;
+  margin-bottom: 10px;
   @media (min-width: 1090px) {
     margin-bottom: 20px;
   }
@@ -35,6 +35,7 @@
 .modal-card__title {
   font-size: 18px;
   line-height: 110%;
+  margin-bottom: 10px;
   @media (min-width: 1090px) {
     font-size: 18px;
     line-height: 110%;
@@ -56,7 +57,10 @@
 }
 
 .modal-card__counter {
-  margin-right: 70px;
+  margin-right: 20px;
+  @media (min-width: 1090px) {
+    margin-right: 70px;
+  }
 }
 
 .modal-card__price {
