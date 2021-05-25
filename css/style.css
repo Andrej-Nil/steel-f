@@ -2499,13 +2499,18 @@ ul {
   margin: 0 0 0 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 540px) {
   .subsection-card {
-    height: 300px;
     margin: 0 20px 0 0;
   }
   .subsection-card:last-child {
     margin: 0 0 0 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .subsection-card {
+    height: 300px;
   }
 }
 
