@@ -1,10 +1,16 @@
 .path-wrap {
   height: 120px;
-
   align-items: center;
   display: none;
   padding: $flank;
+  max-width: 1100px;
   @media (min-width: 1090px) {
+    display: flex;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0;
+    max-width: 1180px;
     display: flex;
   }
 }
