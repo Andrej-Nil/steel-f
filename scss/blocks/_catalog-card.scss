@@ -5,15 +5,19 @@
 }
 
 .catalog-card {
-  max-width: 380px;
+  //max-width: 380px;
   width: 100%;
   background: $white;
   border-radius: $bdr5;
   overflow: hidden;
+  margin-bottom: 20px;
   &:hover .catalog-card__title {
     text-decoration: underline;
   }
-  margin-bottom: 20px;
+
+  @media (min-width: 500px) {
+    width: 49%;
+  }
 }
 
 .catalog-card__img {
@@ -21,13 +25,19 @@
 }
 
 .catalog-card__info {
-  min-height: 120px;
+  min-height: 80px;
   display: flex;
   align-items: center;
+  @media (min-width: 800px) {
+    min-height: 120px;
+  }
 }
 
 .catalog-card__title {
   padding: 0 20px;
-  font-size: 24px;
-  line-height: 95.2%;
+  font-size: 18px;
+  line-height: 110%;
+  @media (min-width: 800px) {
+    font-size: 24px;
+  }
 }

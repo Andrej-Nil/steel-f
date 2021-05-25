@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="p5q8mFhMdAS9z3KSayI05bO34EEXjhMl9ysZOAS3">
   <link rel="stylesheet" href="./css/style.min.css">
-  </script>
   <title>Главная</title>
 </head>
 
@@ -126,6 +125,7 @@
         </div>
       </div>
       <!-- header main -->
+
     </header>
 
     <!--path-->
@@ -137,66 +137,85 @@
     <div class="content-wrap container">
       <!-- left -->
       <div class="left">
+
         <!-- main-slider -->
         <div id='mainSlider' class="main-slider slider ">
           <div class="slides js-slider-wrap">
             <!-- slide -->
             <div data-slide='0' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
+                <picture class="main-slide__img">
+                  <source media="(min-width: 1090px)" srcset="./img/main-banners/main-baner-1-1.jpg">
+                  <source media="(min-width: 800px)" srcset="./img/main-banners/main-baner-1-2.jpg">
+                  <source media="(min-width: 568px)" srcset="./img/main-banners/main-baner-1-3.jpg">
+                  <source media="(min-width: 380px)" srcset="./img/main-banners/main-baner-1-4.jpg">
+                  <source media="(min-width: 0px)" srcset="./img/main-banners/main-baner-1-5.jpg">
+                  <img class="main-slide__img" src="./img/main-banners/main-baner-1-1.jpg" alt="">
+                </picture>
               </a>
             </div>
             <!-- slide -->
 
             <!-- slide -->
-            <div data-slide='1' class="slide js-slide">
+            <div data-slide='0' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
+                <picture class="main-slide__img">
+                  <source media="(min-width: 1090px)" srcset="./img/main-banners/main-baner-2-1.jpg">
+                  <source media="(min-width: 800px)" srcset="./img/main-banners/main-baner-2-2.jpg">
+                  <source media="(min-width: 568px)" srcset="./img/main-banners/main-baner-2-3.jpg">
+                  <source media="(min-width: 380px)" srcset="./img/main-banners/main-baner-2-4.jpg">
+                  <source media="(min-width: 0px)" srcset="./img/main-banners/main-baner-2-5.jpg">
+                  <img class="main-slide__img" src="./img/main-banners/main-baner-2-1.jpg" alt="">
+                </picture>
               </a>
             </div>
             <!-- slide -->
 
             <!-- slide -->
-            <div data-slide='2' class="slide js-slide">
+            <div data-slide='0' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
+                <picture class="main-slide__img">
+                  <source media="(min-width: 1090px)" srcset="./img/main-banners/main-baner-3-1.jpg">
+                  <source media="(min-width: 800px)" srcset="./img/main-banners/main-baner-3-2.jpg">
+                  <source media="(min-width: 568px)" srcset="./img/main-banners/main-baner-3-3.jpg">
+                  <source media="(min-width: 380px)" srcset="./img/main-banners/main-baner-3-4.jpg">
+                  <source media="(min-width: 0px)" srcset="./img/main-banners/main-baner-3-5.jpg">
+                  <img class="main-slide__img" src="./img/main-banners/main-baner-3-1.jpg" alt="">
+                </picture>
               </a>
             </div>
             <!-- slide -->
 
             <!-- slide -->
-            <div data-slide='3' class="slide js-slide">
+            <div data-slide='0' class="slide js-slide">
               <a href="#!" class="main-slide__link">
-                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
+                <picture class="main-slide__img">
+                  <source media="(min-width: 1090px)" srcset="./img/main-banners/main-baner-4-1.jpg">
+                  <source media="(min-width: 800px)" srcset="./img/main-banners/main-baner-4-2.jpg">
+                  <source media="(min-width: 568px)" srcset="./img/main-banners/main-baner-4-3.jpg">
+                  <source media="(min-width: 380px)" srcset="./img/main-banners/main-baner-4-4.jpg">
+                  <source media="(min-width: 0px)" srcset="./img/main-banners/main-baner-4-5.jpg">
+                  <img class="main-slide__img" src="./img/main-banners/main-baner-4-1.jpg" alt="">
+                </picture>
               </a>
             </div>
             <!-- slide -->
-
-            <!-- slide -->
-            <div data-slide='4' class="slide js-slide">
-              <a href="#!" class="main-slide__link">
-                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
-              </a>
-            </div>
-            <!-- slide -->
-
-            <!-- slide -->
-            <div data-slide='5' class="slide js-slide">
-              <a href="#!" class="main-slide__link">
-                <img src="./img/image/main-slider-img.jpg" alt="" class="main-slide__img">
-              </a>
-            </div>
-            <!-- slide -->
-
 
           </div>
-
           <div class="main-slider__control main-slider__control--prev js-prev">
             <img class="main-slider__arrow" src="./img/controls/main-slider-prev.svg" alt="">
           </div>
 
           <div class="main-slider__control main-slider__control--next js-next">
             <img class="main-slider__arrow" src="./img/controls/main-slider-next.svg" alt="">
+          </div>
+
+          <div class="section__dots dots">
+            <span class="section__dot dot js-dot dot--is-active"></span>
+            <span class="section__dot dot js-dot"></span>
+            <span class="section__dot dot js-dot"></span>
+            <span class="section__dot dot js-dot"></span>
+            <span class="section__dot dot js-dot"></span>
           </div>
         </div>
         <!-- main-slider -->
@@ -227,7 +246,7 @@
                       <div class="product-card__info">
                         <h3 class="product-card__title">
                           <a href="product-page.html" class="product-card__title-link link">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
+                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм
                           </a>
                         </h3>
                         <div class="product-card__buy">
@@ -283,7 +302,7 @@
                       <div class="product-card__info">
                         <h3 class="product-card__title">
                           <a href="product-page.html" class="product-card__title-link link">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
+                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм
                           </a>
                         </h3>
                         <div class="product-card__buy">
@@ -339,7 +358,7 @@
                       <div class="product-card__info">
                         <h3 class="product-card__title">
                           <a href="product-page.html" class="product-card__title-link link">
-                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД
+                            Лист нержавеющий 7х1250х2500 мм 03Х13Н6К10М4ФБ-ВД 7х1250х2500 мм
                           </a>
                         </h3>
                         <div class="product-card__buy">
@@ -535,7 +554,7 @@
                 <!-- section__content -->
 
                 <!-- section-controls -->
-                <div class="section-controls section-slider__controls">
+                <div class="section-controls section-slider__link">
                   <a href="#!" class="section-link blue-btn">
                     Посмотреть все
                   </a>
@@ -619,7 +638,7 @@
                 <!-- section__content -->
 
                 <!-- section-controls -->
-                <div class="section-controls section-slider__controls">
+                <div class="section-controls section-slider__link">
                   <a href="#!" class="section-link blue-btn">
                     Посмотреть все
                   </a>
@@ -703,7 +722,7 @@
                 <!-- section__content -->
 
                 <!-- section-controls -->
-                <div class="section-controls">
+                <div class="section-controls section-slider__link">
                   <a href="#!" class="section-link blue-btn">
                     Посмотреть все
                   </a>
@@ -759,6 +778,11 @@
 
                     <div class="input-upload callback__input">
                       <label class="input-upload__label">
+                        <div class="input-upload__mobile-btn">
+                          <img src="./img/icon/paper-clip-icon.svg" alt="" class="input-upload__icon">
+                          <span class="input-upload__mobile-text">Прикрепить файл</span>
+                        </div>
+
                         <div class='input-upload__btn white-btn'>Прикрепить спецификацию</div>
                         <input type="file" name='files' class="input-upload__file js-input js-file-input">
                         <p class='input-upload__text'>
@@ -769,8 +793,10 @@
                       </label>
                     </div>
 
-                    <div class="form__send">
-                      <button class='input-submit blue-btn js-submit' type='submit'>Отправить заявку</button>
+
+                    <div class="form__send callback__send">
+                      <button class='input-submit callback__input-submit blue-btn js-submit' type='submit'>Отправить
+                        заявку</button>
 
                       <div class="input-check js-checkbox">
                         <label class="input-check__label">
@@ -1207,7 +1233,7 @@
                     <div class="news-card__info">
                       <h3 class='news-card__title'>
                         <a href="news.html" class="news-card__title-link link">
-                          Демонтаж стальных труб от ПКФ Цветная металлургия
+                          Демонтаж стальных труб
                         </a>
                       </h3>
 
@@ -1320,7 +1346,12 @@
         </section>
         <!--Новости -->
 
+
       </div>
+
+
+
+
       <!-- left -->
 
       <!-- right -->
@@ -1341,6 +1372,8 @@
 
     </div>
     <!-- content-wrap -->
+
+
 
     <footer class='footer f'>
       <!--f-top-->
@@ -1862,6 +1895,7 @@
       <!--order-thanks-->
     </div>
     <!-- modal windows -->
+
   </div>
   <script src='./js/main.js'></script>
 </body>
