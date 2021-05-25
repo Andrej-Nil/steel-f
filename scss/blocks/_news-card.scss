@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: column;
   background: $white;
-  height: 550px;
+  min-height: 450px;
   width: 100%;
   border-radius: $bdr5;
   overflow: hidden;
 
-  @media (min-width: 500px) {
-    min-width: 32%;
-    margin-bottom: 40px;
+  @media (min-width: 1090px) {
+    min-height: 550px;
   }
 }
 
@@ -17,11 +16,8 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
-  @media (min-width: 500px) {
-    height: auto;
-    margin-bottom: 10px;
-  }
-  @media (min-width: 1500px) {
+  height: auto;
+  @media (min-width: 700px) {
     margin-bottom: 36px;
   }
 }
@@ -35,59 +31,32 @@
 .news-card__info {
   display: flex;
   flex-direction: column;
-  padding: 0 15px 37px;
+  padding: 0 15px 20px;
   flex-grow: 1;
-  @media (min-width: 500px) {
-    padding: 0 10px 20px;
-  }
-  @media (min-width: 1500px) {
+  @media (min-width: 700px) {
     padding: 0 55px 30px;
   }
 }
 
 .news-card__title-link {
   font-weight: 600;
-  font-size: 18px;
-  line-height: 110%;
-  @media (min-width: 500px) {
-    line-height: 100%;
-    font-size: 15px;
-  }
-  @media (min-width: 1090px) {
-    line-height: 100%;
-    font-size: 18px;
-  }
-  @media (min-width: 1500px) {
-    font-size: 24px;
-    line-height: 150%;
-  }
+  font-size: 24px;
+  line-height: 120%;
 }
 
 .news-card__title {
-  @media (min-width: 1090px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 25px;
   @media (min-width: 1500px) {
     margin-bottom: 30px;
   }
 }
 
 .news-card__desc {
-  display: none;
   flex-grow: 1;
-  font-size: 16px;
-  line-height: 95.2%;
+  font-size: 18px;
+  line-height: 130%;
   color: $d-blue;
-  @media (min-width: 1090px) {
-    display: block;
-    font-weight: normal;
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-  @media (min-width: 1500px) {
-    font-size: 18px;
-    line-height: 130%;
-  }
+  margin-bottom: 20px;
 }
 
 .news-card__btn {
@@ -97,5 +66,8 @@
 .news-card__link {
   margin: 0 auto;
   padding: 5px 57px;
-  width: auto;
+  width: 100%;
+  @media (min-width: 450px) {
+    width: auto;
+  }
 }
