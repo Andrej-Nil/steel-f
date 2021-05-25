@@ -22,7 +22,7 @@
   transition: 0.2s ease-in-out;
   min-height: 0;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -32,7 +32,7 @@
     background: $milky;
   }
   @media (min-width: 580px) {
-    padding: 0 18px 0;
+    padding: 0 5px 0 15px;
   }
 }
 .filters__title {
@@ -46,11 +46,11 @@
 
 .filters__list {
   padding-bottom: 1px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  //display: flex;
+  //flex-wrap: wrap;
+  //justify-content: space-between;
   &::after {
-    content: '';
+    content: "";
     width: 220px;
   }
 }
@@ -104,7 +104,7 @@
 }
 
 .filters__btn-show {
-  font-family: 'Futura', sans-serif;
+  font-family: "Futura", sans-serif;
 }
 .filters__roll-up-text {
   text-align: center;

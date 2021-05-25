@@ -2,19 +2,25 @@
   position: relative;
   display: inline-block;
   margin-bottom: $bdr5;
-  max-width: 220px;
+  //max-width: 220px;
+  margin-right: 7px;
   width: 100%;
   z-index: 0;
   transition: 0.015s ease-in-out 0.1s;
   @media (min-width: 580px) {
-    max-width: 49%;
+    max-width: 48%;
   }
   @media (min-width: 800px) {
     max-width: 32%;
   }
-  @media (min-width: 1500px) {
+
+  @media (min-width: 1090px) {
     max-width: 220px;
-    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 238px;
+    //margin-right: 20px;
   }
 }
 
@@ -68,28 +74,28 @@
 }
 
 .filter__input::-webkit-input-placeholder {
-  font-family: 'Futura', sans-serif;
+  font-family: "Futura", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
   color: $d-blue;
 }
 .filter__input::-moz-placeholder {
-  font-family: 'Futura', sans-serif;
+  font-family: "Futura", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
   color: $d-blue;
 }
 .filter__input:-ms-input-placeholder {
-  font-family: 'Futura', sans-serif;
+  font-family: "Futura", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
   color: $d-blue;
 }
 .filter__input:-moz-placeholder {
-  font-family: 'Futura', sans-serif;
+  font-family: "Futura", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
