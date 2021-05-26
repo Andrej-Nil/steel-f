@@ -2210,3 +2210,4 @@ function sorting(a, b) {
   // a должно быть равным b
   return 0;
 }
+
