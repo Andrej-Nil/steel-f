@@ -17,7 +17,8 @@
       <div class="h-contact">
         <div class="h-contact__inner container">
           <div class="h-city">
-            <span class='h-city__name'>
+            <img class='h-city__icon' src="./img/icon/location.svg" alt="" class="">
+            <span id='selectCityBtn' class='h-city__name'>
               Хабаровск
             </span>
           </div>
@@ -471,6 +472,436 @@
       </span>
     </nav>
     <!--mobile-menu-->
+
+    <!-- modal windows -->
+    <div id='modalsWrap' class="modals-wrap">
+      <div class="bg-modals">
+        <!-- connection windows-->
+
+        <!-- select-city -->
+        <div id="selectCity" class="select-city modal js-modal">
+          <h3 class="select-city__title">
+            Выберите ваш город
+          </h3>
+          <div class="select-city__form">
+            <!--input-with-name-->
+            <input id='selectCityId' type="text" class="input select-city__input" data-selectCity name='name'
+              placeholder="Введите название">
+            <!--input-with-name-->
+          </div>
+          <ul class="select-city__list scroll-bar">
+            <li class="select-city__item ">
+              <a href="#!" class="select-city__link" data-city>Екатеринбург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Санкт-Петербург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Калиниград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Волгоград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Екатеринбург</a>
+            </li>
+
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Санкт-Петербург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Калиниград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Волгоград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Екатеринбург</a>
+            </li>
+
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Санкт-Петербург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Калиниград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Волгоград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Екатеринбург</a>
+            </li>
+
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Санкт-Петербург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Калиниград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Волгоград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Екатеринбург</a>
+            </li>
+
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Санкт-Петербург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Калиниград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Волгоград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Екатеринбург</a>
+            </li>
+
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Санкт-Петербург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Калиниград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Волгоград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Екатеринбург</a>
+            </li>
+
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Санкт-Петербург</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Калиниград</a>
+            </li>
+            <li class="select-city__item">
+              <a href="#!" class="select-city__link" data-city>Волгоград</a>
+            </li>
+
+          </ul>
+
+          <div class="modal__close">
+            <span class="btn js-close-modal">
+              <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+            </span>
+          </div>
+        </div>
+        <!-- select-city -->
+
+        <!-- feetback -->
+        <div id='feetback' class="connection-modal modal js-modal">
+          <!--connection-modal__content-->
+          <div class="connection-modal__content">
+            <div class="modal__text">
+              <h4 class="modal__title">
+                Обратный звонок
+              </h4>
+              <p class="modal__desc">
+                Оставьте свои контактные данные
+                и наш менеджер свяжется с вами в течении часа
+              </p>
+            </div>
+
+            <form id='feetbackForm' action="testAjax/test-simple-form.json" method="POST" class='modal-form'>
+              <!--modal__inputs-->
+              <div class="modal__inputs inputs-block">
+
+                <!--input-with-name-->
+                <input type="text" class="input js-input js-input-name" name='name' placeholder="Константин">
+                <!--input-with-name-->
+
+                <!--input-with-name-->
+                <input type="text" class="input js-input js-input-phone" name='phone' placeholder="+7 922 888 88 88">
+                <!--input-with-name-->
+
+                <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
+
+                <!--input-check-->
+                <div class="input-check js-checkbox">
+                  <label class="input-check__label">
+                    <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
+                    <span class="input-check__fake">
+
+                    </span>
+                    <span class="input-check__text">
+                      Даю согласие на обработку моих персональных данных
+                    </span>
+
+                  </label>
+                </div>
+                <!--input-check-->
+              </div>
+              <!--modal__inputs-->
+
+
+              <!--modal-form__error-->
+              <div class='form-error'>
+                <p class="form-error__message js-message">
+                  Ошибка отправки
+                </p>
+              </div>
+              <!--modal-form__error-->
+
+            </form>
+
+            <div class="modal__close">
+              <span class="btn js-close-modal">
+                <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+              </span>
+            </div>
+
+            <div class="modal__bg connection-modal__bg">
+
+            </div>
+          </div>
+          <!--connection-modal__content-->
+        </div>
+        <!-- feetback -->
+
+        <!-- connection-thanks -->
+        <div id='connectionThanks' class="connection-thanks modal js-modal">
+          <div class="connection-thanks__content">
+            <div class="modal-thanks__text">
+              <h4 class="modal__title">
+                Спасибо за вашу заявку
+              </h4>
+              <p class="modal__desc">
+                Скоро мы свяжемся с вами!
+              </p>
+
+              <a href="index.html" class="modal__link white-btn">На главную</a>
+            </div>
+          </div>
+
+          <div class="modal__close">
+            <span class="btn js-close-modal">
+              <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+            </span>
+          </div>
+        </div>
+        <!-- connection-thanks -->
+        <!-- connection windows-->
+
+        <!-- order windows-->
+
+        <!--fast order-->
+        <div id='fastOrder' class="order-modal modal js-modal">
+          <form id='fastOrderForm' action="testAjax/test-simple-form.json" method="POST">
+            <div class="order-modal__content">
+              <!--order-modal__left-->
+              <div class="order-modal__left">
+                <div class="modal__text">
+                  <h4 class="modal__title">
+                    Быстрый заказ
+                  </h4>
+                  <p class="modal__desc">
+                    Оставьте свои контактные данные
+                  </p>
+                </div>
+                <!--order-inputs-->
+                <div class='order-inputs'>
+                  <!--modal__inputs-->
+                  <div class="modal__inputs inputs-block">
+
+                    <input type="text" class="input js-input js-input-name" name='name' placeholder="Константин">
+
+                    <input type="text" class="input js-input-phone js-input" name='phone'
+                      placeholder="+7 922 888 88 88">
+
+                    <input type="text" class="input js-input-email js-input" name='email'
+                      placeholder="Kostya228@gmail.com">
+
+                    <textarea class="input textarea order__textarea js-input-textarea js-input" name='message'
+                      placeholder="Мне нужно быстро доставить"></textarea>
+
+                    <button class='input-submit blue-btn js-submit' type='submit'>Отправить</button>
+
+                    <!--input-check-->
+                    <div class="input-check js-checkbox">
+                      <label class="input-check__label">
+                        <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
+                        <span class="input-check__fake">
+
+                        </span>
+                        <span class="input-check__text">
+                          Я прочитал и согласен с
+                          <a href="#!" class='input-check__link'>правилами обработки персональных данных</a>
+                        </span>
+
+                      </label>
+                    </div>
+                    <!--input-check-->
+
+                  </div>
+                  <!--modal__inputs-->
+
+                  <!--modal-form__error-->
+                  <div class='form-error'>
+                    <p class="form-error__message js-message">
+                      Ошибка отправки
+                    </p>
+                  </div>
+                  <!--modal-form__error-->
+                </div>
+                <!--order-inputs-->
+              </div>
+              <!--order-modal__left-->
+
+              <!--order-modal__right-->
+              <div class="order-modal__right">
+                <h4 class="modal__title order-modal__right-title">
+                  Информация о заказе
+                </h4>
+
+                <!--order-modal__card-->
+                <div id="modalCardWrap" class="modal-card__wrap">
+
+                </div>
+                <div class="order-modal__total">
+                  <span class="order-modal__text">Итого:</span>
+                  <span id='fastOrderTotalPrice' class="order-modal__price js-total-price">8900 ₽</span>
+                </div>
+                <!--order-modal__right-->
+
+              </div>
+          </form>
+          <div class="modal__close">
+            <span id='closeFastOrderBtn' class="btn js-close-modal .js-clean-product">
+              <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--fast order-->
+
+      <!--order-->
+      <div id='order' class="connection-modal modal js-modal">
+        <!--connection-modal__content-->
+        <div class="connection-modal__content">
+          <div class="modal__text">
+            <h4 class="modal__title">
+              Заказ на сумму: <span id='orderTotalePrice' class="order
+                -total-price js-total-price">900000000000 p</span>
+            </h4>
+            <p class="modal__desc">
+              Оставьте свои контактные данные
+              и наш менеджер свяжется с вами в течении часа
+            </p>
+          </div>
+
+          <form id='orderForm' action="testAjax/order-test.json" method="POST" class='modal-form'>
+            <!--modal__inputs-->
+            <div class="modal__inputs inputs-block">
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Имя
+                </label>
+                <input type="text" class="input js-input-name js-input" name='name' placeholder="Константин">
+              </div>
+              <!--input-with-name-->
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Телефон
+                </label>
+                <input type="text" class="input js-input-phone js-input" name='phone' placeholder="+7 922 888 88 88">
+              </div>
+              <!--input-with-name-->
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Почта
+                </label>
+                <input type="text" class="input js-input-email js-input" name='email' placeholder="Kostya228@gmail.com">
+              </div>
+              <!--input-with-name-->
+
+              <!--input-with-name-->
+              <div class="input-with-name">
+                <label class="input-label">
+                  Сообщение
+                </label>
+                <textarea class="input textarea js-input-textarea js-input" name='message'
+                  placeholder="Мне нужно быстро доставить"></textarea>
+              </div>
+              <!--input-with-name-->
+
+              <button class='input-submit js-submit blue-btn' type='submit'>Отправить</button>
+
+              <!--input-check-->
+              <div class="input-check js-checkbox">
+                <label class="input-check__label">
+                  <input class='input-check__checkbox js-input-checkbox' type="checkbox" name='consent' checked>
+                  <span class="input-check__fake">
+
+                  </span>
+                  <span class="input-check__text">
+                    Я прочитал и согласен с
+                    <a href="#!" class='input-check__link'>правилами обработки персональных данных</a>
+                  </span>
+
+                </label>
+              </div>
+              <!--input-check-->
+
+            </div>
+            <!--modal__inputs-->
+
+
+            <!--modal-form__error-->
+            <div class='form-error'>
+              <p class="form-error__message js-message">
+                Ошибка отправки
+              </p>
+            </div>
+            <!--modal-form__error-->
+
+          </form>
+
+          <div class="modal__close">
+            <span class="btn js-close-modal">
+              <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+            </span>
+          </div>
+
+          <div class="modal__bg connection-modal__bg">
+
+          </div>
+        </div>
+        <!--connection-modal__content-->
+      </div>
+      <!--order-->
+      <!-- order windows-->
+
+      <!--order-thanks-->
+      <div id='orderThanks' class="connection-thanks modal js-modal">
+        <div class="order-thanks__content">
+          <div class="modal-thanks__text">
+            <h4 class="modal__title">
+              Спасибо за ваш заказ
+            </h4>
+            <p class="modal__desc">
+              Скоро мы свяжемся с вами!
+            </p>
+            <a href="index.html" class="modal__link blue-btn white-btn">На главную</a>
+          </div>
+        </div>
+        <div class="modal__close">
+          <span class="btn js-close-modal">
+            <img src="./img/controls/close-btn-icon.svg" alt="" class="btn__icon">
+          </span>
+        </div>
+      </div>
+      <!--order-thanks-->
+    </div>
+    <!-- modal windows -->
   </div>
   <script src='./js/main.js'></script>
 </body>

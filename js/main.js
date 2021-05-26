@@ -6,6 +6,9 @@ const GET = 'GET';
 const body = document.querySelector('body');
 
 //modal
+const selectCityModal = document.querySelector('#selectCity');
+const selectCityInput = selectCityModal.querySelector('#selectCityId');
+const selectCityBtn = document.querySelector('#selectCityBtn');
 const modalsWrap = document.querySelector('#modalsWrap');
 const bgModals = document.querySelector('.bg-modals')
 const feetbackBtn = document.querySelector('#feetbackBtn');
@@ -82,41 +85,7 @@ let moveEnd = null;
 if (catalogTabs) {
   catalogTabs.addEventListener('click', toggleCatalogTabs)
 }
-function toggleCatalogTabs(e) {
-  const tab = e.target.closest('[data-tab]')
-  if (!tab) {
-    return;
-  }
-  const tabs = catalogTabs.querySelectorAll('[data-tab]')
-  const contentTabs = document.querySelectorAll('[data-contentTab]');
-  const dataId = tab.dataset.id;
 
-  contentTabs.forEach((content) => {
-    const id = content.getAttribute('id');
-    if (dataId === 'all') {
-      content.classList.remove('products--is-hide');
-      return;
-    }
-    if (dataId === id) {
-      content.classList.remove('products--is-hide');
-      return;
-    }
-    content.classList.add('products--is-hide');
-
-  })
-
-  tabs.forEach((tab) => {
-    if (dataId === tab.dataset.id) {
-      tab.classList.add('catalog-tabs__item--is-active');
-      return;
-    }
-    tab.classList.remove('catalog-tabs__item--is-active');
-
-  })
-
-
-
-}
 
 if (loginForm) {
   loginForm.addEventListener('submit', (e) => {
@@ -237,6 +206,28 @@ if (removeProductBtns.length) {
   });
 }
 
+if (selectCityInput) {
+  selectCityInput.addEventListener('input', searchCity)
+}
+
+function searchCity(e) {
+  const value = e.target.value.trim().toLowerCase();
+  const city = selectCityModal.querySelectorAll('[data-city]');
+  city.forEach(el => {
+    const cityName = el.innerHTML.toLowerCase();
+    const res = cityName.includes(value);
+    const li = el.closest('.select-city__item');
+    li.classList.add('select-city__item--is-hide');
+    if (res === '') {
+      li.classList.remove('select-city__item--is-hide');
+    }
+    if (res) {
+      li.classList.remove('select-city__item--is-hide');
+    }
+
+  })
+}
+
 
 window.addEventListener('scroll', function () {
   if (news) {
@@ -298,6 +289,10 @@ if (fastOrderBtns.length && modalsWrap) {
     btn.addEventListener('click', () => modalOpen(fastOrderModal));
     btn.addEventListener('click', () => renderModalProduct(fastOrderModal, btn));
   });
+}
+
+if (selectCityModal && selectCityBtn) {
+  selectCityBtn.addEventListener('click', () => modalOpen(selectCityModal));
 }
 
 if (orderModal && orderBtn) {
@@ -670,7 +665,41 @@ function getToken() {
 }
 
 //Функции для работы переключателя
+function toggleCatalogTabs(e) {
+  const tab = e.target.closest('[data-tab]')
+  if (!tab) {
+    return;
+  }
+  const tabs = catalogTabs.querySelectorAll('[data-tab]')
+  const contentTabs = document.querySelectorAll('[data-contentTab]');
+  const dataId = tab.dataset.id;
 
+  contentTabs.forEach((content) => {
+    const id = content.getAttribute('id');
+    if (dataId === 'all') {
+      content.classList.remove('products--is-hide');
+      return;
+    }
+    if (dataId === id) {
+      content.classList.remove('products--is-hide');
+      return;
+    }
+    content.classList.add('products--is-hide');
+
+  })
+
+  tabs.forEach((tab) => {
+    if (dataId === tab.dataset.id) {
+      tab.classList.add('catalog-tabs__item--is-active');
+      return;
+    }
+    tab.classList.remove('catalog-tabs__item--is-active');
+
+  })
+
+
+
+}
 function toggleSwitch(switcher) {
   const left = switcher.classList.contains('switch__toggle--is-left');
   const right = switcher.classList.contains('switch__toggle--is-right');
@@ -734,11 +763,11 @@ function showIElement(elementLink) {
 function getData(method, data, api) {
 
   return new Promise(function (resolve, reject) {
-
+    const formData = createFormData(data);
     const xhr = new XMLHttpRequest();
     let response = null
     xhr.open(method, api, true);
-    xhr.send(data);
+    xhr.send(formData);
     xhr.onload = function () {
       if (xhr.status != 200) {
         console.log('Ошибка: ' + xhr.status);
@@ -757,6 +786,14 @@ function getData(method, data, api) {
       reject(new Error("Network Error"))
     };
   })
+}
+
+function createFormData(data) {
+  const formData = new FormData()
+  for (let key in data) {
+    formData.append(`${key}`, data[key])
+  }
+  return formData;
 }
 
 async function loadingNews() {

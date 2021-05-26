@@ -1,0 +1,41 @@
+.select-city {
+  max-width: 850px;
+  padding: 60px 50px;
+}
+
+.select-city__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 95.2%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.select-city__form {
+  margin-bottom: 20px;
+}
+
+.select-city__list {
+  height: 304px;
+  overflow-x: auto;
+}
+
+.select-city__item {
+  display: inline-block;
+  width: 32%;
+  margin-bottom: 15px;
+}
+
+.select-city__item--is-hide {
+  display: none;
+}
+
+.select-city__link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: $d-grey;
+  &:hover {
+    color: $blue;
+  }
+}
