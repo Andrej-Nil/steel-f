@@ -25,12 +25,8 @@
 
   @media (min-width: 1280px) {
     max-width: 380px;
-  }
-
-  @media (min-width: 1500px) {
     &:hover .rolled-card__title {
-      transform: translate(0, -20%);
-      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      text-decoration: underline;
     }
   }
 }
