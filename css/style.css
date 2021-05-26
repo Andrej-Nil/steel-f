@@ -247,6 +247,17 @@ ul {
   }
 }
 
+.white-btn:hover {
+  border: 4px solid #7dc8ed;
+  color: #7dc8ed;
+}
+
+.white-btn:active {
+  border: 4px solid #c6c7ca;
+  color: #ffffff;
+  background: #c6c7ca;
+}
+
 .dark-btn {
   position: relative;
   display: inline-block;

@@ -46,6 +46,17 @@
   @media (min-width: 500px) {
     font-size: 18px;
   }
+
+  &:hover {
+    border: 4px solid $l-blue;
+    color: $l-blue;
+  }
+
+  &:active {
+    border: 4px solid $grey;
+    color: $white;
+    background: $grey;
+  }
 }
 
 .dark-btn {
