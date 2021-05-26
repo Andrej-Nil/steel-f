@@ -322,13 +322,13 @@ if (mobileMenuCloseBtn) {
 }
 
 // Функции для работы слайдеров
-function carusel(el,) {
+function carusel(el) {
   const slideWrap = el.querySelector('#caruselSlidesWrap');
   const slideTrack = el.querySelector('#caruselSlides');
   const slides = el.querySelectorAll('.js-carusel-slide');
   const slidesLenght = slides.length;
-  const prevArrow = el.querySelector('#caruselArrowPrev');
-  const nextArrow = el.querySelector('#caruselArrowNext');
+  const prevArrow = el.querySelector('.js-prev');
+  const nextArrow = el.querySelector('.js-next');
   const dotList = el.querySelectorAll('.js-carusel-dote');
   const caruselDotsWrap = el.querySelector('#caruselDots');
   const caruselDotsTrack = el.querySelector('#caruselDotsTrack');

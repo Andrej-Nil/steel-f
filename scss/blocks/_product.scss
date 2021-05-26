@@ -23,12 +23,22 @@
 }
 
 //pic-dots
-.product-carusel-dots {
-  display: none;
+.product-carusel__controls {
+  padding: 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
+.product-carusel__arrow {
+  cursor: pointer;
+}
+
+.product-carusel__dots {
+  max-width: 300px;
   overflow: hidden;
   width: 100%;
-
+  margin: 0 auto;
   @media (min-width: 700px) {
     display: flex;
     justify-content: center;
@@ -38,7 +48,7 @@
 .pic-dots {
   display: flex;
   //flex-wrap: nowrap;
-  max-width: 320px;
+  max-width: 290px;
   width: 100%;
   transition: 0.2s ease-in-out;
 }
@@ -50,7 +60,7 @@
   min-width: 80px;
   height: 80px;
   cursor: pointer;
-  margin-right: 40px;
+  margin-right: 25px;
   transition: 0.2s ease-in-out;
   border: 2px solid $white;
 }
@@ -74,7 +84,7 @@
   @media (min-width: 700px) {
     margin: 0 0 50px 0;
     max-width: 380px;
-    max-height: 190px;
+    max-height: 280px;
     border-radius: $bdr5 0 $bdr5 0;
   }
 }
@@ -112,9 +122,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 15px;
+  padding: 30px 15px 0 0;
   @media (min-width: 1090px) {
-    padding: 0 30px 0 0;
+    padding: 30px 30px 0 0;
   }
 }
 
