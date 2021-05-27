@@ -763,11 +763,11 @@ function showIElement(elementLink) {
 function getData(method, data, api) {
 
   return new Promise(function (resolve, reject) {
-    const formData = createFormData(data);
+
     const xhr = new XMLHttpRequest();
     let response = null
     xhr.open(method, api, true);
-    xhr.send(formData);
+    xhr.send(data);
     xhr.onload = function () {
       if (xhr.status != 200) {
         console.log('Ошибка: ' + xhr.status);
@@ -1287,7 +1287,7 @@ function managingСounter(counter) {
   incBtn.addEventListener('click', inc);
   quantityInput.addEventListener('change', checkingValue);
 
-
+  const formData = createFormData(data);
   async function dec() {
     let quantity = +quantityInput.value;
     quantity -= 1;
@@ -1297,7 +1297,7 @@ function managingСounter(counter) {
       return;
     }
     data.count = quantity;
-    response = await getData(POST, data, api);
+    response = await getData(POST, formData, api);
     quantityInput.value = response.prod.count;
     setTotalPrice(response.card.total_price);
   }
@@ -1306,7 +1306,7 @@ function managingСounter(counter) {
     let quantity = +quantityInput.value;
     quantity += 1;
     data.count = quantity;
-    response = await getData(POST, data, api);
+    response = await getData(POST, daformDatata, api);
     quantityInput.value = response.prod.count;
     setTotalPrice(response.card.total_price);
   }
@@ -1873,7 +1873,8 @@ function getQuantity(product) {
 
 async function addInBasketBns(btn) {
   const info = getInfoFromBtnToSend(btn);
-  const response = await getData(POST, info.data, info.api);
+  const formData = createFormData(info.data);
+  const response = await getData(POST, formData, api);
   setInBasketBtn(btn, response.toggle, response.desc)
   setBasketIndicator(response.count)
 }
@@ -1889,7 +1890,8 @@ async function removeProduct(btn) {
   const productCard = btn.closest('.js-product-card');
   const productList = productCard.parentElement
   const info = getInfoFromBtnToSend(btn);
-  const response = await getData(POST, info.data, info.api);
+  const formData = createFormData(info.data);
+  const response = await getData(POST, formData, api);
   if (response.toggle) {
     productList.removeChild(productCard);
     setTotalPrice(response.total_price);
@@ -1944,7 +1946,8 @@ async function renderCatalogNav() {
   const data = {
     _token: _token,
   }
-  const response = await getData(POST, data, api);
+  const formData = createFormData(data);
+  const response = await getData(POST, formData, api);
 
   render(catalogNav, response.desc, getMarkupEl);
   const btns = document.querySelectorAll('.js-subcategory-btn');
@@ -1986,7 +1989,8 @@ async function renderModalProduct(modal, btn) {
   }
   let counters = null
   let favoriteBtns = null
-  const response = await getData(POST, data, api);
+  const formData = createFormData(data);
+  const response = await getData(POST, formData, api);
 
   render(listWrap, response.prod, getMarkupEl);
 
@@ -2128,7 +2132,9 @@ async function renderSubCatalogNav(btn) {
   if (liList.length) {
     return;
   }
-  const response = await getData(POST, data, api);
+
+  const formData = createFormData(data);
+  const response = await getData(POST, formData, api);
   render(ul, response.desc, getMarkupEl);
   dropdownOpen(btn);
   rotateArrowDropdownsBtn(btn);
