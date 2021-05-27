@@ -1,23 +1,32 @@
 .catalog-tabs {
   display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid $milky;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+  padding: $flank;
+  @media (min-width: 700px) {
+    justify-content: flex-start;
+    margin-bottom: 70px;
+  }
+  @media (min-width: 1090px) {
+    padding: 0;
+  }
 }
 
 .catalog-tabs__item {
-  position: relative;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 95.2%;
-  margin-right: 100px;
-  padding: 0 0 38px 0;
+  font-size: 24px;
+  line-height: 150%;
+  position: relative;
+
+  padding: 0 0 10px 0;
   cursor: pointer;
 
   &:last-child {
     margin-right: 0;
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -30,6 +39,13 @@
     &::before {
       background: $l-blue;
     }
+  }
+  @media (min-width: 700px) {
+    padding: 0 0 38px 0;
+    margin-right: 100px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 95.2%;
   }
 }
 

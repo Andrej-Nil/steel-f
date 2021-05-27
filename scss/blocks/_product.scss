@@ -11,7 +11,6 @@
 }
 
 .product-carusel {
-  //display: flex;
   user-select: none;
   margin: 0 0 30px 0;
   @media (min-width: 700px) {
@@ -27,7 +26,9 @@
   padding: 0 10px;
   position: relative;
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 .product-carusel__arrow {
@@ -37,8 +38,7 @@
 .product-carusel__dots {
   max-width: 200px;
   overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
+  margin: 0 20px;
   @media (min-width: 450px) {
     max-width: 300px;
     display: flex;
@@ -203,10 +203,6 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  //@media (min-width: 1500px) {
-  //  flex-direction: row;
-  //  padding: 11px 33px;
-  //}
 }
 
 .product__discount {
