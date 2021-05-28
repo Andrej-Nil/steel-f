@@ -48,6 +48,42 @@
   }
 }
 
+//.specifications__list {
+//}
+
+.specifications__item {
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 65%;
+  font-size: 14px;
+  @media (min-width: 500px) {
+    font-size: 18px;
+  }
+}
+
+.specifications__name {
+  display: flex;
+  //max-width: 350px;
+  width: 100%;
+  //margin-right: 15px;
+  color: $d-grey;
+}
+
+.specifications__title {
+  display: block;
+  margin-right: 5px;
+}
+.specifications__line {
+  display: block;
+  flex-grow: 1;
+  line-height: 0%;
+  border-bottom: 1px dashed $grey;
+}
+
+.specifications__parameter {
+  white-space: nowrap;
+}
+
 //versus 2
 //.product-info {
 //  position: relative;
