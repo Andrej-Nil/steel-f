@@ -1306,7 +1306,7 @@ function managingСounter(counter) {
     let quantity = +quantityInput.value;
     quantity += 1;
     data.count = quantity;
-    response = await getData(POST, daformDatata, api);
+    response = await getData(POST, formData, api);
     quantityInput.value = response.prod.count;
     setTotalPrice(response.card.total_price);
   }
@@ -1359,8 +1359,6 @@ function setFavoriteIcon(el, boolean) {
   const imgEl = el.querySelector('.js-favorite-img');
   const pathToImage = './img/icon/product-like-icon.svg';
   const pathToImageActive = './img/icon/product-like-active-icon.svg';
-
-  console.log(el)
 
   //setFavoriteIcon
   if (!boolean) {
@@ -1874,14 +1872,15 @@ function getQuantity(product) {
 async function addInBasketBns(btn) {
   const info = getInfoFromBtnToSend(btn);
   const formData = createFormData(info.data);
-  const response = await getData(POST, formData, api);
+  const response = await getData(POST, formData, info.api);
   setInBasketBtn(btn, response.toggle, response.desc)
   setBasketIndicator(response.count)
 }
 
 async function addFavorite(btn) {
   const info = getInfoFromBtnToSend(btn);
-  const response = await getData(POST, info.data, info.api);
+  const formData = createFormData(info.data);
+  const response = await getData(POST, formData, info.api);
   setFavoriteIcon(btn, response.toggle);
   setFavoriteIndicator(response.count)
 }
