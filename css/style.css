@@ -3367,10 +3367,6 @@ ul {
 @media (min-width: 800px) {
   .category-info__header {
     margin-bottom: 30px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -3380,13 +3376,6 @@ ul {
   overflow: hidden;
   border-radius: 5px;
   margin: 0 0 20px 0;
-}
-
-@media (min-width: 800px) {
-  .category-info__preview {
-    min-width: 350px;
-    margin: 0 20px 0 0;
-  }
 }
 
 .category-info__img {

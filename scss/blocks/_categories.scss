@@ -67,10 +67,8 @@
 .category-info__header {
   display: flex;
   flex-direction: column;
-  //margin-bottom: 30px;
   @media (min-width: 800px) {
     margin-bottom: 30px;
-    flex-direction: row;
   }
 }
 
@@ -79,12 +77,7 @@
   width: 100%;
   overflow: hidden;
   border-radius: $bdr5;
-  //margin-right: 20px;
   margin: 0 0 20px 0;
-  @media (min-width: 800px) {
-    min-width: 350px;
-    margin: 0 20px 0 0;
-  }
 }
 .category-info__img {
   width: 100%;

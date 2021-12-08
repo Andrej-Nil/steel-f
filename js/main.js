@@ -1836,15 +1836,26 @@ function toggleInBasketIconBtn(btn, toggle = false) {
 }
 
 function toggleInBasketBtn(btn, toggle = false, desc) {
+
   if (toggle) {
     btn.classList.remove('blue-btn');
     btn.classList.add('white-btn');
-    btn.innerHTML = desc;
-    return;
+    if (btn.closest('[type="button"]')) {
+      btn.value = desc
+    } else {
+      btn.innerHTML = desc;
+    }
+
+  } else {
+    btn.classList.add('blue-btn');
+    btn.classList.remove('white-btn');
+    if (btn.closest('[type="button"]')) {
+      btn.value = desc
+    } else {
+      btn.innerHTML = desc;
+    }
   }
-  btn.classList.add('blue-btn');
-  btn.classList.remove('white-btn');
-  btn.innerHTML = desc;
+
 }
 
 function getArticlesAndQuantityArr(modalCards) {
